@@ -1,0 +1,19 @@
+管理员 xfy 123
+有车位的人 xxx 111
+无车位的人 xxx 222
+
+
+
+登录和注册界面index.html
+js/index.js                     css/index.js
+
+给社区管理员用的界面admin.html
+js/admin.js                   css/admin.js
+
+给没有车位的人用的界面havenostall.html
+js/havenostall.js                   css/havenostall.js
+js/admin.js                   css/admin.js
+
+给有车位的人用的界面havestall.html
+js/havestall.js                   css/havestall.js
+js/admin.js                   css/admin.js

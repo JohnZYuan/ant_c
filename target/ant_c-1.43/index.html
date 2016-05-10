@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="zh" class="no-js"> <!--<![endif]-->
+    <head>
+		<title>登录界面</title>
+        <meta charset="UTF-8" />
+        <!-- 自适应页面 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!-- 页面布局 -->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		<!-- 动画效果 -->
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+    </head>
+    <body onload="init();">
+        <div class="container">
+            <header style="margin-top:50px;">
+                <h1> <span style="color:white;letter-spacing:5px;">欢迎来到C部落 !</span></h1>
+            </header>
+            <section>
+                <div id="container_demo" >
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+					<div id="wrapper">
+						<!-- 用户登录 -->
+                        <div id="login" class="animate form">
+                            <form id="loginform" action="antsc.html" autocomplete="on">
+                                <h1>Login</h1> 
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u" >用户名</label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="请输入你的用户名"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> 密码 </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="请输入你的密码" />
+                                </p>
+                                <p class="keeplogin"> 
+									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+									<label for="loginkeeping">保持登录</label>
+								</p>
+                                <p class="login button"> 
+                                    <input id="loginbtn" type="submit" value="登录" />
+								</p>
+                                <p class="change_link">
+									还没有账户？
+									<a href="#toregister" class="to_register">注册</a>
+								</p>
+                            </form>
+                        </div>
+
+						<!-- 注册 -->
+                        <div id="register" class="animate form">
+                            <form  action="mysuperscript.php" autocomplete="on">
+                                <h1> Sign up </h1>
+                                <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">用户名</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="请输入你的用户名" />
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">密码 </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="请输入你的密码"/>
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">确认密码</label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="请确认你的密码"/>
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" >邮箱</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="请输入你的邮箱"/> 
+                                </p>
+                                <p> 
+                                    <label for="mobilephonenumbersignup" class="youmobilephonenumber" data-icon="P" >联系电话</label>
+                                    <input id="mobilephonenumbersignup" name="mobilephonenumbersignup" required="required" type="tel" placeholder="请输入你的联系电话"/> 
+                                </p>
+								<p> 
+                                    <label for="idsignup" class="youid" data-icon="I" >身份证号</label>
+                                    <input id="idsignup" name="idsignup" required="required" type="text" placeholder="请输入你的身份证号"/> 
+                                </p>
+								<p class="choose">
+									<select id="choosetype" name="choosetype">
+										<option value="住户" selected="selected">住户</option>
+										<option value="管理员">管理员</option>
+									</select>
+									<label for="choosetype" class="youtype">身份类型</label>
+								</p>
+								<p id="cname" style="display:none;"> 
+                                    <label for="communitynamesignup" class="youcommunityname" data-icon="N" >社区名</label>
+                                    <input id="communitynamesignup" name="communitynamesignup" required="required" type="text" placeholder="请输入您要注册的社区名"/> 
+                                </p>
+								<p id="caddress" style="display:none;"> 
+                                    <label for="communityaddresssignup" class="youcommunityaddress" data-icon="A" >社区地址</label>
+                                    <input id="communityaddresssignup" name="communityaddresssignup" required="required" type="text" placeholder="请输入社区地址"/> 
+                                </p>
+                                <p class="signin button"> 
+									<input id="registerbtn" type="submit" value="注册"/> 
+								</p>
+                                <p class="change_link">  
+									已经有账户了？
+									<a href="#tologin" class="to_register">直接登录</a>
+								</p>
+                            </form>
+                        </div>
+						
+                    </div>
+                </div>  
+            </section>
+        </div>
+		
+		<script src="js/index.js"></script>
+    </body>
+</html>

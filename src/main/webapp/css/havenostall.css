@@ -1,0 +1,22 @@
+/* 个人信息 */
+#userinfo,#usestallhistory{
+	width:100%;
+	border:1px solid #fff;
+	margin-bottom:30px;
+}
+
+#userinfo th,#userinfo td,#usestallhistory th,#usestallhistory td{
+	border:1px solid #fff;
+	height:30px;
+}
+
+#userinfo caption,#usestallhistory caption{
+	text-align:center;
+	font-size:30px;
+}
+
+/* 段落布局 */
+p{
+	margin-top:20px;
+	margin-bottom:20px;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>C部落</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/actsc.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- Parking Page -->
+<link href="css/parking.css" rel="stylesheet" type="text/css">
+<!-- Admin Page -->
+<link href="css/admin.css" rel="stylesheet" type="text/css">
+<!-- Have No Stall -->
+<link href="css/havenostall.css" rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+	
+</head>
+
+<body id="page-top" class="index" onload="autoCreateTable();displayCurrentStallStatus();">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    <span class="navbar-header page-scroll"><a class="navbar-brand page-scroll" href="#page-top">C部落</a></span> 
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden"> <a href="#page-top"></a> </li>
+		<li> <a class="page-scroll" href="index.html">登录/注册</a> </li>
+        <li> <a class="page-scroll" href="#info">个人信息</a> </li>
+        <li> <a class="page-scroll" href="#about">关于C部落</a> </li>
+        <li> <a class="page-scroll" href="#team">团队</a> </li>
+        <li> <a class="page-scroll" href="#contact">联系我们</a> </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
+<!-- Parking Section -->
+<section id="parking">
+	<div class="container">
+		<div id="content" class="row">
+			<div class="text-center">
+				<h2 class="section-heading">停车系统</h2>
+				<div class="line"></div>
+			</div>
+	  
+			<div id="navigation" class="col-lg-3">
+				<ul>
+					<li><a href="#content">当前车位信息</a></li>
+					<li><a href="#content">我的信息</a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+		
+			<div id="content-1-1" class="col-lg-9 content">
+				<p>总车位数:<span id="totalstall">0</span>&nbsp;&nbsp;&nbsp;&nbsp;可用车位数:<span id="availablestall">0</span></p>
+				<div id="currentParkingStatus">
+				</div>
+			</div><!-- /content-1-1 -->
+			
+			<div id="content-2-1" class="col-lg-9 content">
+				<table id = "userinfo">
+					<caption>身份信息</caption>
+					<tr>
+						<th>姓名</th>
+						<th>身份证号</th>
+						<th>手机号</th>
+						<th>电子邮件</th>
+						<th>车子位置</th>
+					</tr>
+					<tr>
+						<td id="name">Tom</td>
+						<td id="id_card">320322199606151658</td>
+						<td id="phone_number">15152036578</td>
+						<td id="e_mail">m15152036578@123.com</td>
+						<td id="car_position">第二单元</th>
+					</tr>
+				</table>
+				<table id = "usestallhistory">
+					<caption>使用车位历史</caption>
+					<tr>
+						<th>时间</th>
+						<th>车位</th>
+						<th>时长</th>
+						<th>费用</th>
+					</tr>
+					<tr>
+						<!-- 动态生成，不需要id -->
+						<td id="use_time">2015-06-15 13:32:32</td>
+						<td id="use_car_position">第一单元</td>
+						<td id="use_time_length">2小时</td>
+						<td id="use_cost">30元</td>
+					</tr>
+				</table>
+			</div><!-- /content-2-1 -->
+		</div><!-- content -->
+
+  </div><!-- /container -->
+</section><!-- /Parking Section -->
+
+<footer class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 "> <span class="copyright">Copyright &copy; 2016 C 部落 &nbsp;&nbsp;&nbsp;&nbsp;C&amp;B智慧社区 </span> </div>
+    </div>
+  </div>
+</footer>
+
+<!-- jQuery --> 
+<script src="js/jquery.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script> 
+
+<!-- Plugin JavaScript --> 
+<script src="js/jquery.easing.min.js"></script> 
+<script src="js/classie.js"></script> 
+<script src="js/cbpAnimatedHeader.js"></script> 
+
+<!-- Contact Form JavaScript --> 
+<script src="js/jqBootstrapValidation.js"></script> 
+<script src="js/contact_me.js"></script>
+
+<!-- Custom Theme JavaScript --> 
+<script src="js/five.js"></script>
+
+<!-- Parking JS -->
+<script src="js/parking.js"></script>
+
+<!-- Admin JS -->
+<script src="js/admin.js"></script>
+
+<!-- Have No Stall JS -->
+<script src="js/havenostall.js"></script>
+
+</body>
+</html>

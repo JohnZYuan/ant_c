@@ -1,0 +1,58 @@
+/* 个人信息 */
+#userinfo,#usestallhistory{
+	width:100%;
+	border:1px solid #fff;
+	margin-bottom:30px;
+}
+
+#userinfo th,#userinfo td,#usestallhistory th,#usestallhistory td{
+	border:1px solid #fff;
+	height:30px;
+	overflow:hidden;
+}
+
+#userinfo caption,#usestallhistory caption{
+	text-align:center;
+	font-size:30px;
+}
+
+#anticipatedincome{
+	border:1px solid #fff;
+	width:400px;
+	height:200px;
+    display:inline-block;/*让此元素在父元素内居中显示*/
+	margin-top:10px;
+	margin-bottom:5px;
+	padding:10px;
+	position:relative;
+}
+
+#anticipatedincome p{
+	color:#777;
+	font-size:30px;
+	text-align:left;
+	padding-left:40px;
+	margin-top:30px;
+}
+
+#anticipatedincome span{
+	padding-left:2em;
+}
+
+.rentout{
+	padding:2px 25px;
+	position:absolute;
+	bottom:20px;
+	background-color:#9c3;
+}
+
+input[name="startrentout"]{
+	border:1px solid #fff;
+	left:40px;
+}
+
+input[name="stoprentout"]{
+	border:1px solid #fff;
+	right:40px;
+}
+
