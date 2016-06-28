@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--自适应屏幕-->
+<meta name="viewport" content="width=device-width , initial-scale=1" />
+<title>评价</title>
+<!--主题-->
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css"/>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+<style>
+  *{
+	font-family:微软雅黑;
+  }
+  legend{
+	font:bold 20px 宋体;
+  }
+  html .ui-page-theme-c .ui-btn:hover,html .ui-bar-c .ui-btn:hover,html .ui-body-c .ui-btn:hover,html body .ui-group-theme-c .ui-btn:hover,html body .ui-btn.ui-btn-c:hover{background:#80c269;border-color:#80c269;color:#000}
+  html .ui-page-theme-c .ui-btn:active,html .ui-bar-c .ui-btn:active,html .ui-body-c .ui-btn:active,html body .ui-group-theme-c .ui-btn:active,html body .ui-btn.ui-btn-c:active{background:#80c269;border-color:#80c269;color:#000}
+  html .ui-page-theme-c .ui-btn.ui-btn-active,html .ui-bar-c .ui-btn.ui-btn-active,html .ui-body-c .ui-btn.ui-btn-active,html body .ui-group-theme-c .ui-btn.ui-btn-active,html body .ui-btn.ui-btn-c.ui-btn-active,html .ui-page-theme-c .ui-flipswitch-active,html .ui-bar-c .ui-flipswitch-active,html .ui-body-c .ui-flipswitch-active,html body .ui-group-theme-c .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-c.ui-flipswitch-active,html .ui-page-theme-c .ui-slider-track .ui-btn-active,html .ui-bar-c .ui-slider-track .ui-btn-active,html .ui-body-c .ui-slider-track .ui-btn-active,html body .ui-group-theme-c .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-c .ui-btn-active{background-color:#80c269;}
+</style>
+<script>
+            $(function () {
+                $("#tijiao").click(function () {
+                    alert("评价成功！感谢您提出宝贵的意见！");
+                });
+            });
+</script>
+</head>
+<body>  
+  <div data-role="page" id="pageone" data-theme="b">
+    <div data-role="header" data-position="fixed">
+       <a href="referendum.html" data-role="button" data-icon="flat-cross" data-inline="true" data-iconpos="notext" data-ajax="false">返回</a>
+       <h1>评价</h1>
+    </div>
+    <div data-role="content">
+      <p>尊敬的全体业主：</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;您好！非常感谢您一直以来对本社区所付出的努力及对我们工作的支持！为您提供更优美的居住环境、更贴心的物业服务是我们一直努力的目标，因此，我们需要更多地了解您的需求，以进一步提升我们的服务水平。请您对我们的工作进行客观评价，选择您认为合适的答案，感谢您的支持与参与！</p>
+      <form method="post" action="#">
+        <fieldset data-role="controlgroup" data-type="horizontal" data-theme="c">
+          <legend>1、您对小区物业管理服务的综合评价：</legend>
+          <label for="a1" style="font:normal 16px 微软雅黑">非常满意</label>
+          <input type="radio" name="management" id="a1" value="a1">
+          <label for="a2" style="font:normal 16px 微软雅黑">比较满意</label>
+          <input type="radio" name="management" id="a2" value="a2">
+          <label for="a3" style="font:normal 16px 微软雅黑">一般</label>
+          <input type="radio" name="management" id="a3" value="a3">
+          <label for="a4" style="font:normal 16px 微软雅黑">不满意</label>
+          <input type="radio" name="management" id="a4" value="a4">
+          <label for="a5" style="font:normal 16px 微软雅黑">非常不满意</label>
+          <input type="radio" name="management" id="a5" value="a5">
+        </fieldset>
+        <fieldset data-role="controlgroup" data-type="horizontal" data-theme="c">
+          <legend>2、您对小区安全服务的评价：</legend>
+          <label for="b1" style="font:normal 16px 微软雅黑">非常满意</label>
+          <input type="radio" name="security" id="b1" value="b1">
+          <label for="b2" style="font:normal 16px 微软雅黑">比较满意</label>
+          <input type="radio" name="security" id="b2" value="b2">
+          <label for="b3" style="font:normal 16px 微软雅黑">一般</label>
+          <input type="radio" name="security" id="b3" value="b3">
+          <label for="b4" style="font:normal 16px 微软雅黑">不满意</label>
+          <input type="radio" name="security" id="b4" value="b4">
+          <label for="b5" style="font:normal 16px 微软雅黑">非常不满意</label>
+          <input type="radio" name="security" id="b5" value="b5">
+        </fieldset> 
+        <fieldset data-role="controlgroup" data-type="horizontal" data-theme="c">
+          <legend>3、保安人员服务态度：</legend>
+          <label for="c1" style="font:normal 16px 微软雅黑">非常满意</label>
+          <input type="radio" name="guard" id="c1" value="c1">
+          <label for="c2" style="font:normal 16px 微软雅黑">比较满意</label>
+          <input type="radio" name="guard" id="c2" value="c2">
+          <label for="c3" style="font:normal 16px 微软雅黑">一般</label>
+          <input type="radio" name="guard" id="c3" value="c3">
+          <label for="c4" style="font:normal 16px 微软雅黑">不满意</label>
+          <input type="radio" name="guard" id="c4" value="c4">
+          <label for="c5" style="font:normal 16px 微软雅黑">非常不满意</label>
+          <input type="radio" name="guard" id="c5" value="c5">
+        </fieldset> 
+        <fieldset data-role="controlgroup" data-type="horizontal" data-theme="c">
+          <legend>4、您对小区清洁卫生的评价：</legend>
+          <label for="d1" style="font:normal 16px 微软雅黑">非常满意</label>
+          <input type="radio" name="sanitary" id="d1" value="d1">
+          <label for="d2" style="font:normal 16px 微软雅黑">比较满意</label>
+          <input type="radio" name="sanitary" id="d2" value="d2">
+          <label for="d3" style="font:normal 16px 微软雅黑">一般</label>
+          <input type="radio" name="sanitary" id="d3" value="d3">
+          <label for="d4" style="font:normal 16px 微软雅黑">不满意</label>
+          <input type="radio" name="sanitary" id="d4" value="d4">
+          <label for="d5" style="font:normal 16px 微软雅黑">非常不满意</label>
+          <input type="radio" name="sanitary" id="d5" value="d5">
+        </fieldset>
+        <fieldset data-role="controlgroup" data-type="horizontal" data-theme="c">
+          <legend>5、保洁人员服务态度：</legend>
+          <label for="e1" style="font:normal 16px 微软雅黑">非常满意</label>
+          <input type="radio" name="cleaner" id="e1" value="e1">
+          <label for="e2" style="font:normal 16px 微软雅黑">比较满意</label>
+          <input type="radio" name="cleaner" id="e2" value="e2">
+          <label for="e3" style="font:normal 16px 微软雅黑">一般</label>
+          <input type="radio" name="cleaner" id="e3" value="e3">
+          <label for="e4" style="font:normal 16px 微软雅黑">不满意</label>
+          <input type="radio" name="cleaner" id="e4" value="e4">
+          <label for="e5" style="font:normal 16px 微软雅黑">非常不满意</label>
+          <input type="radio" name="cleaner" id="e5" value="e5">
+        </fieldset> 
+        <fieldset data-role="controlgroup" data-type="horizontal" data-theme="c">
+          <legend>6、您对小区环境绿化的评价：</legend>
+          <label for="f1" style="font:normal 16px 微软雅黑">非常满意</label>
+          <input type="radio" name="environment" id="f1" value="f1">
+          <label for="f2" style="font:normal 16px 微软雅黑">比较满意</label>
+          <input type="radio" name="environment" id="f2" value="f2">
+          <label for="f3" style="font:normal 16px 微软雅黑">一般</label>
+          <input type="radio" name="environment" id="f3" value="f3">
+          <label for="f4" style="font:normal 16px 微软雅黑">不满意</label>
+          <input type="radio" name="environment" id="f4" value="f4">
+          <label for="f5" style="font:normal 16px 微软雅黑">非常不满意</label>
+          <input type="radio" name="environment" id="f5" value="f5">
+        </fieldset> 
+        <fieldset data-role="controlgroup" data-type="horizontal" data-theme="c">
+          <legend>7、绿化人员服务态度：</legend>
+          <label for="g1" style="font:normal 16px 微软雅黑">非常满意</label>
+          <input type="radio" name="greener" id="g1" value="g1">
+          <label for="g2" style="font:normal 16px 微软雅黑">比较满意</label>
+          <input type="radio" name="greener" id="g2" value="g2">
+          <label for="g3" style="font:normal 16px 微软雅黑">一般</label>
+          <input type="radio" name="greener" id="g3" value="g3">
+          <label for="g4" style="font:normal 16px 微软雅黑">不满意</label>
+          <input type="radio" name="greener" id="g4" value="g4">
+          <label for="g5" style="font:normal 16px 微软雅黑">非常不满意</label>
+          <input type="radio" name="greener" id="g5" value="g5">
+        </fieldset> 
+        <fieldset data-role="controlgroup" data-type="horizontal" data-theme="c">
+          <legend>8、您对维修服务的评价：</legend>
+          <label for="h1" style="font:normal 16px 微软雅黑">非常满意</label>
+          <input type="radio" name="maintenance" id="h1" value="h1">
+          <label for="h2" style="font:normal 16px 微软雅黑">比较满意</label>
+          <input type="radio" name="maintenance" id="h2" value="h2">
+          <label for="h3" style="font:normal 16px 微软雅黑">一般</label>
+          <input type="radio" name="maintenance" id="h3" value="h3">
+          <label for="h4" style="font:normal 16px 微软雅黑">不满意</label>
+          <input type="radio" name="maintenance" id="h4" value="h4">
+          <label for="h5" style="font:normal 16px 微软雅黑">非常不满意</label>
+          <input type="radio" name="maintenance" id="h5" value="h5">
+        </fieldset>
+        <fieldset data-role="controlgroup" data-type="horizontal" data-theme="c">
+          <legend>9、维修人员服务态度：</legend>
+          <label for="i1" style="font:normal 16px 微软雅黑">非常满意</label>
+          <input type="radio" name="repairman" id="i1" value="i1">
+          <label for="i2" style="font:normal 16px 微软雅黑">比较满意</label>
+          <input type="radio" name="repairman" id="i2" value="i2">
+          <label for="i3" style="font:normal 16px 微软雅黑">一般</label>
+          <input type="radio" name="repairman" id="i3" value="i3">
+          <label for="i4" style="font:normal 16px 微软雅黑">不满意</label>
+          <input type="radio" name="repairman" id="i4" value="i4">
+          <label for="i5" style="font:normal 16px 微软雅黑">非常不满意</label>
+          <input type="radio" name="repairman" id="i5" value="i5">
+        </fieldset> 
+        <fieldset data-role="controlgroup" data-type="horizontal" data-theme="c">
+          <legend>10、您对物业客户服务的评价：</legend>
+          <label for="j1" style="font:normal 16px 微软雅黑">非常满意</label>
+          <input type="radio" name="service" id="j1" value="j1">
+          <label for="j2" style="font:normal 16px 微软雅黑">比较满意</label>
+          <input type="radio" name="service" id="j2" value="j2">
+          <label for="j3" style="font:normal 16px 微软雅黑">一般</label>
+          <input type="radio" name="service" id="j3" value="j3">
+          <label for="j4" style="font:normal 16px 微软雅黑">不满意</label>
+          <input type="radio" name="service" id="j4" value="j4">
+          <label for="j5" style="font:normal 16px 微软雅黑">非常不满意</label>
+          <input type="radio" name="service" id="j5" value="j5">
+        </fieldset>
+        <fieldset data-role="controlgroup" data-type="horizontal" data-theme="c">
+          <legend>11、客服人员服务态度：</legend>
+          <label for="k1" style="font:normal 16px 微软雅黑">非常满意</label>
+          <input type="radio" name="staff" id="k1" value="k1">
+          <label for="k2" style="font:normal 16px 微软雅黑">比较满意</label>
+          <input type="radio" name="staff" id="k2" value="k2">
+          <label for="k3" style="font:normal 16px 微软雅黑">一般</label>
+          <input type="radio" name="staff" id="k3" value="k3">
+          <label for="k4" style="font:normal 16px 微软雅黑">不满意</label>
+          <input type="radio" name="staff" id="k4" value="k4">
+          <label for="k5" style="font:normal 16px 微软雅黑">非常不满意</label>
+          <input type="radio" name="staff" id="k5" value="k5">
+        </fieldset> 
+        <fieldset data-role="controlgroup" data-type="horizontal" data-theme="c">
+          <legend>12、您对社区建设的评价：</legend>
+          <label for="l1" style="font:normal 16px 微软雅黑">非常满意</label>
+          <input type="radio" name="construction" id="l1" value="l1">
+          <label for="l2" style="font:normal 16px 微软雅黑">比较满意</label>
+          <input type="radio" name="construction" id="l2" value="l2">
+          <label for="l3" style="font:normal 16px 微软雅黑">一般</label>
+          <input type="radio" name="construction" id="l3" value="l3">
+          <label for="l4" style="font:normal 16px 微软雅黑">不满意</label>
+          <input type="radio" name="construction" id="l4" value="l4">
+          <label for="l5" style="font:normal 16px 微软雅黑">非常不满意</label>
+          <input type="radio" name="construction" id="l5" value="l5">
+        </fieldset>
+      </form> 
+    </div>
+    
+    <div data-role="footer" data-position="fixed" data-theme="c">
+	  <center><input id="tijiao" type="button" data-inline="true" data-rel="back" data-theme="d" value="提交"></center>
+    </div>   
+  </div> 
+</body>
+</html>

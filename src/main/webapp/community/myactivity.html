@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--自适应屏幕-->
+<meta name="viewport" content="width=device-width , initial-scale=1" />
+<!--主题-->
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css"/>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+<title>我的活动</title>
+</head>
+<style>
+*{
+  font-family:"微软雅黑";
+}
+html .ui-page-theme-b .ui-btn.ui-btn-active,html .ui-bar-b .ui-btn.ui-btn-active,html .ui-body-b .ui-btn.ui-btn-active,html body .ui-group-theme-b .ui-btn.ui-btn-active,html body .ui-btn.ui-btn-b.ui-btn-active,html .ui-page-theme-b .ui-flipswitch-active,html .ui-bar-b .ui-flipswitch-active,html .ui-body-b .ui-flipswitch-active,html body .ui-group-theme-b .ui-flipswitch-active,html body .ui-flipswitch.ui-bar-b.ui-flipswitch-active,html .ui-page-theme-b .ui-slider-track .ui-btn-active,html .ui-bar-b .ui-slider-track .ui-btn-active,html .ui-body-b .ui-slider-track .ui-btn-active,html body .ui-group-theme-b .ui-slider-track .ui-btn-active,html body div.ui-slider-track.ui-body-b .ui-btn-active{
+  background-color:#fff;
+  border-color:#ec6941;
+  color:#16a085;
+}
+</style>
+<body>
+
+  <div data-role="page" id="pageone" data-theme="b">
+    <div data-role="header" data-position="fixed">
+      <a href="appoint.html" data-role="button" data-icon="flat-cross" data-inline="true" data-iconpos="notext" data-ajax="false">返回</a>
+      <h1>我的活动</h1>
+      <div data-role="navbar" data-theme="c">
+        <ul>
+          <li><a href="#" class="ui-btn-active ui-state-persist">我创建的</a></li>
+          <li><a href="#pagetwo" style="font-family:微软雅黑">我参与的</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="content">
+      <center><p>无数据</p></center>
+    </div>
+  </div> 
+
+  <div data-role="page" id="pagetwo" data-theme="b">
+    <div data-role="header">
+      <a href="appoint.html" data-role="button" data-icon="flat-cross" data-inline="true" data-iconpos="notext" data-ajax="false">返回</a>
+      <h1>我的活动</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#pageone" style="font-family:微软雅黑">我创建的</a></li>
+          <li><a href="#" class="ui-btn-active ui-state-persist">我参与的</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="content">
+      <center><p>无数据</p></center>
+    </div> 
+  </div>
+  
+</body>
+</html>

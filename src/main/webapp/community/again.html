@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/owl.carousel.css"><!-- Exhibition -->
+<link rel="stylesheet" href="css/owl.theme.css"><!-- Exhibition_theme -->
+<link rel="stylesheet" href="css/jquery.mobile.flatui.css" type="text/css"/><!-- App_thteme -->
+<link rel="stylesheet" href="css/mmenu.css" type="text/css"/><!-- Nav_css -->
+<link rel="stylesheet" href="css/jquery.mmenu.css" type="text/css"/><!-- Nav_css -->
+<link rel="stylesheet" href="css/font.css" type="text/css"><!-- Font_css -->
+<link rel="stylesheet" href="css/reset.css"> <!-- Css_reset -->
+<link rel="stylesheet" href="css/style.css"> <!-- Gem_style -->
+<script src="js/jquery-1.11.0.min.js"></script><!-- jQuery-1.11.0 -->
+<script src="js/main.js"></script> <!-- Gem_jQuery -->
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+<script src="js/jquery.js"></script><!-- jQuery -->
+<script>$(document).bind("mobileinit", function() {$.mobile.pageLoadErrorMessage = "你看到这个说明出错了...";});</script>
+<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+<script src="js/owl.carousel.js"></script><!-- Exhibition -->	
+<script>$(function(){$('#owl-play').owlCarousel({singleItem: true});});</script>
+<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+<script type="text/javascript">$(function() {$('nav#menu').mmenu();});</script>
+<style>	
+	p,h2,a,li,ul{font-family: '微软雅黑';}
+	.ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d{text-align: center;}
+	a:link { text-decoration:none;} 
+	#navbar{border: none;}
+	.ui-icon-myicon{background:url('img/myicon.jpg') no-repeat 0 0;} <!-- 替换图标未实现！！ -->
+</style>
+<script>
+	$(document).ready(function(){
+		$("#a_bottom").click(function(){
+			var look=document.getElementById('a_bottom');
+			look.innerHTML="没有更多了...";
+		});
+	});
+</script>
+<!-- 定制功能 -->
+<script>
+            $(document).ready(function(){
+                var id_card = "320381199408290013";
+                
+                    var o = {};
+                    o = id_card;
+                    
+                    $.post("/ant_c/page_load",
+                            {
+                                json: JSON.stringify(o)
+                            },
+                    function (data) {
+//                        alert(data.pos_one_name);
+//                        alert(data.pos_one_image);
+//                        alert(data.pos_one_h_link);
+
+                        document.getElementById("a").src="img/gn/" + data.pos_one_image;
+                        document.getElementById('a1').innerHTML = "" + data.pos_one_name;
+                        document.getElementById("a11").src="" + data.pos_one_h_link;
+                        
+                        document.getElementById("b").src="img/gn/" + data.pos_two_image;
+                        document.getElementById('b1').innerHTML = "" + data.pos_two_name;
+                        document.getElementById("b11").src="" + data.pos_two_h_link;
+                        
+                        document.getElementById("c").src="img/gn/" + data.pos_three_image;
+                        document.getElementById('c1').innerHTML = "" + data.pos_three_name;
+                        document.getElementById("c11").src="" + data.pos_three_h_link;
+                        
+                        document.getElementById("d").src="img/gn/" + data.pos_four_image;
+                        document.getElementById('d1').innerHTML = "" + data.pos_four_name;
+                        document.getElementById("d11").src="" + data.pos_four_h_link;
+                        
+                        document.getElementById("e").src="img/gn/" + data.pos_five_image;
+                        document.getElementById('e1').innerHTML = "" + data.pos_five_name;
+                        document.getElementById("e11").src="" + data.pos_five_h_link;
+                        
+                        document.getElementById("f").src="img/gn/" + data.pos_six_image;
+                        document.getElementById('f1').innerHTML = "" + data.pos_six_name;
+                        document.getElementById("f11").src="" + data.pos_six_h_link;
+                        
+                        document.getElementById("g").src="img/gn/" + data.pos_seven_image;
+                        document.getElementById('g1').innerHTML = "" + data.pos_seven_name;
+                        document.getElementById("g11").src="" + data.pos_seven_h_link;
+                    },
+                            "json");
+            });
+</script>
+
+</head>
+<body>
+<div data-role="page" id="page_fist">
+
+	<!-- Header -->
+	<div class="header">
+		<a href="#menu" class="menu"></a>
+		<p style="text-align:center;">欢迎来到AC社区</p>
+		<div class="main-nav"><a href="login/index.html" class="contacts" data-ajax="false"></a></div>
+	</div>
+	
+	<!-- Left_nav -->
+	<nav id="menu">
+		<ul>
+			<li style="text-align:center;">
+				<img src="img/user.png" alt="">
+				<p>&nbsp;</p>
+				<p style="color:white;">特伦宁</p>
+				<p>&nbsp;</p>
+			</li>
+			<li><a href="again.html" data-ajax="false" style="color:white;">消息中心</a>
+				<ul>
+					<li><a href="again.html" data-ajax="false" style="color:white;">1 . 新功能上线啦!</a>
+						<ul>
+							<p style="color:white; padding-top:5px; line-height:30px; text-indent:2em">&nbsp;&nbsp;11月6日，国内首个县域智慧城市服务平台“和沐生活”APP上线新闻发布
+							暨电子商务研讨会在安徽省安庆市潜山县举行。会上，潜山县商务局与潜山和沐商业管理有限公司（下文简称和沐商业）签订了共同
+							打造“智慧潜山”的战略框架协议。近年来，随着我国“互联网+”战略的迅速推进，“智慧城市”与普通百姓的生活渐行渐近。据统计，
+							截至今年上半年，我国已公布3批国家智慧城市试点共计277个，总计规划投资近万亿元，但县域级智慧城市建设还相对滞后。</p>
+						</ul>
+					</li>
+					<li><a href="again.html" data-ajax="false" style="color:white;">2 . 水电物业费月底账单</a>
+						<ul>
+							<li><a href="again.html" data-ajax="false" style="color:white;">水费：100￥</a></li>
+							<li><a href="again.html" data-ajax="false" style="color:white;">电费：300￥</a></li>
+							<li><a href="again.html" data-ajax="false" style="color:white;">物业费：50￥</a></li>
+							<li><a href="again.html" data-ajax="false" style="color:white;">总计：450￥</a></li>
+						</ul>
+					</li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">3 . 社区新活动，快来参加</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">4 . 社区百科知识竞赛</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">5 . 有人邀请你进入新的讨论组</a></li>
+				</ul>
+			</li>
+			<li><a href="again.html" data-ajax="false" style="color:white;">我的活动</a>
+				<ul>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">1 . 我的活动 1</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">2 . 我的活动 2</a>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">3 . 我的活动 3</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">4 . 我的活动 4</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">5 . 我的活动 5</a>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">6 . 我的活动 6</a></li>
+				</ul>
+			</li>
+			<li><a href="again.html" data-ajax="false" style="color:white;">我的收藏</a>
+				<ul>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">1 . 我的收藏 1</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">2 . 我的收藏 2</a>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">3 . 我的收藏 3</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">4 . 我的收藏 4</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">5 . 我的收藏 5</a>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">6 . 我的收藏 6</a></li>
+				</ul>
+			</li>
+			<li><a href="again.html" style="color:white;" data-ajax="false">修改业主信息</a></li>
+			<li><a href="again.html" style="color:white;" data-ajax="false">更换绑定小区</a></li>
+			<li><a href="again.html" style="color:white;" data-ajax="false">退出登录</a></li>
+		</ul>
+	</nav>
+	
+	<!-- content -->
+	<div data-role="content">
+		<div id="owl-play" class="owl-carousel"  align="center">
+			<a class="item"><img src="img/aa.jpg" alt=""></a>
+			<a class="item"><img src="img/aa.jpg" alt=""></a>
+			<a class="item"><img src="img/aa.jpg" alt=""></a>
+			<a class="item"><img src="img/aa.jpg" alt=""></a>
+			<a class="item"><img src="img/aa.jpg" alt=""></a>
+		</div>
+		
+		<!--<div class="ui-grid-c">
+			<div class="ui-block-a"><a href="#link" data-theme="b" data-role="button" data-iconpos="top" data-inline="true">Search</a></div>
+			<div class="ui-block-b"><a href="#link" data-theme="b" data-role="button" data-iconpos="top" data-inline="true">Search</a></div>
+			<div class="ui-block-c"><a href="#link" data-theme="b" data-role="button" data-iconpos="top" data-inline="true">Search</a></div>
+			<div class="ui-block-d"><a href="#link" data-theme="b" data-role="button" data-iconpos="top" data-inline="true">Search</a></div>
+		</div>-->
+		
+		<!-- Basic_function -->
+		<div class="ui-grid-c">
+			<div class="ui-block-a"><a href="http://baike.so.com/doc/4378840-4585073.html" id="a11"><img src="img/gn/a.png" alt="" id="a"></a></div>
+			<div class="ui-block-b"><a href="http://baike.so.com/doc/4378840-4585073.html" id="b11"><img src="img/gn/b.png" alt="" id="b"></a></div>
+			<div class="ui-block-c"><a href="http://baike.so.com/doc/4378840-4585073.html" id="c11"><img src="img/gn/c.png" alt="" id="c"></a></div>
+			<div class="ui-block-d"><a href="http://baike.so.com/doc/4378840-4585073.html" id="d11"><img src="img/gn/d.png" alt="" id="d"></a></div>
+		</div>
+		<div class="ui-grid-c" style="padding-bottom:5px">
+			<div class="ui-block-a" style="font-family:'微软雅黑';" id="a1">缴电费</div>
+			<div class="ui-block-b" style="font-family:'微软雅黑';" id="b1">缴水费</div>
+			<div class="ui-block-c" style="font-family:'微软雅黑';" id="c1">缴停车费</div>
+			<div class="ui-block-d" style="font-family:'微软雅黑';" id="d1">缴物业费</div>
+		</div>
+		<div class="ui-grid-c">
+			<div class="ui-block-a"><a href="http://baike.so.com/doc/4378840-4585073.html" id="e11"><img src="img/gn/e.png" alt="" id="e"></a></div>
+			<div class="ui-block-b"><a href="http://baike.so.com/doc/4378840-4585073.html" id="f11"><img src="img/gn/f.png" alt="" id="f"></a></div>
+			<div class="ui-block-c"><a href="http://baike.so.com/doc/4378840-4585073.html" id="g11"><img src="img/gn/g.png" alt="" id="g"></a></div>
+			<div class="ui-block-d"><a href="http://baike.so.com/doc/4378840-4585073.html" id="h11"><img src="img/gn/z.png" alt="" id="h"></a></div>
+		</div>
+		<div class="ui-grid-c">
+			<div class="ui-block-a" style="font-family:'微软雅黑';" id="e1">生活导航</div>
+			<div class="ui-block-b" style="font-family:'微软雅黑';" id="f1">社区公告</div>
+			<div class="ui-block-c" style="font-family:'微软雅黑';" id="g1">社区活动</div>
+			<div class="ui-block-d" style="font-family:'微软雅黑';" id="h1">更多</div>
+		</div>
+		
+		<!-- Search_box -->
+		<form method="post" action="" style="text-align:center;margin-bottom:-15px;">
+			<div data-role="fieldcontain">
+				<input type="search" name="search" id="search" placeholder="想搜点什么呢..." data-theme="b">
+			</div>
+		</form>
+		
+		<!-- 应实现marquee无缝滑动(只有每次重新回到这个地方菜循环滚动) -->
+		<ul data-role="listview" data-inset="true">
+			<li data-role="list-divider" data-theme="b">小区公告</li>
+			<a href="http://baike.so.com/doc/4378840-4585073.html" style="color:#000;font-weight:normal;} ">
+				<marquee direction="up" behavior="scroll" scrollamount="2" loop="-1" height="50">
+					<p style="padding-left:14px;font-size:14px;">1、爱护小区环境，请勿高空抛物<br /><br /></p>
+					<p style="padding-left:14px;font-size:14px;">2、栽种容易，维护不易，且住且珍惜<br /><br /></p>
+					<p style="padding-left:14px;font-size:14px;">3、关于办理业主卡的通知</p>
+				</marquee>
+			</a>
+		</ul>
+		
+		<!-- Listview_one -->
+		<ul data-role="listview" data-inset="true">
+			<li data-role="list-divider" data-theme="b">众筹活动</li>
+			<li data-theme="c">
+				<a href="http://baike.so.com/doc/4378840-4585073.html">
+					<img src="img/ktv.jpg" style="padding-top:15px;padding-left:10px;">
+					<p style="font-size:14px"><b>火锅店人数团购</b></p>
+					<p>开始时间：2016-04-16</p>
+					<p>结束时间：<span style="color:red">2016-06-16</span></p>
+				</a>
+				<!--<a data-icon="myicon"></a>-->
+			</li>
+			<li data-theme="c">
+				<a href="http://baike.so.com/doc/4378840-4585073.html">
+					<img src="img/youlechang.jpg" style="padding-top:15px;padding-left:10px;">
+					<p style="font-size:14px;"><b>夏季葡萄采摘</b></p>
+					<p>开始时间：2016-04-16</p>
+					<p>结束时间：<span style="color:red">2016-06-16</span></p>
+				</a>
+			</li >
+			<li data-theme="c">
+				<a href="http://baike.so.com/doc/4378840-4585073.html">
+					<img src="img/shuiguodian.jpg" style="padding-top:15px;padding-left:10px;">
+					<p style="font-size:14px;"><b>梨花沟踏青赏花</b></p>
+					<p>开始时间：2016-04-16</p>
+					<p>结束时间：<span style="color:red">2016-06-16</span></p>
+				</a>
+			</li>
+			<li data-theme="c">
+				<a href="http://baike.so.com/doc/4378840-4585073.html">
+					<img src="img/canting.jpg" style="padding-top:15px;padding-left:10px;">
+					<p style="font-size:14px"><b>花好月圆人欢聚</b></p>
+					<p>开始时间：2016-04-16</p>
+					<p>结束时间：<span style="color:red">2016-06-16</span></p>
+				</a>
+			</li>
+			<li data-icon="false" data-theme="b">
+				<a style="text-align: center;" href="http://baike.so.com/doc/4378840-4585073.html"><b>查看更多</b></a>
+			</li>
+		</ul>
+		
+		<!-- Oasic_function -->
+		<!-- <div class="ui-grid-c" style="padding-top:10px;padding-bottom:6px;">
+			<div class="ui-block-a"><a href="http://baike.so.com/doc/4378840-4585073.html"><img src="img/fun_1.png" alt=""></a></div>
+			<div class="ui-block-b"><a href="http://baike.so.com/doc/4378840-4585073.html"><img src="img/fun_2.png" alt=""></a></div>
+			<div class="ui-block-c"><a href="http://baike.so.com/doc/4378840-4585073.html"><img src="img/fun_3.png" alt=""></a></div>
+			<div class="ui-block-d"><a href="http://baike.so.com/doc/4378840-4585073.html"><img src="img/fun_4.png" alt=""></a></div>
+		</div>
+		<div class="ui-grid-c" style="padding-bottom:10px">
+			<div class="ui-block-a" style="font-family:'微软雅黑';">功能1</div>
+			<div class="ui-block-b" style="font-family:'微软雅黑';">功能2</div>
+			<div class="ui-block-c" style="font-family:'微软雅黑';">功能3</div>
+			<div class="ui-block-d" style="font-family:'微软雅黑';">功能4</div>
+		</div>
+		<div class="ui-grid-c" style="padding-bottom:10px;"> 
+			<div class="ui-block-a"><a href="http://baike.so.com/doc/4378840-4585073.html"><img src="img/fun_5.png" alt=""></a></div>
+			<div class="ui-block-b"><a href="http://baike.so.com/doc/4378840-4585073.html"><img src="img/fun_6.png" alt=""></a></div>
+			<div class="ui-block-c"><a href="http://baike.so.com/doc/4378840-4585073.html"><img src="img/fun_7.png" alt=""></a></div>
+			<div class="ui-block-d"><a href="http://baike.so.com/doc/4378840-4585073.html"><img src="img/fun_8.png" alt=""></a></div>
+		</div>
+		<div class="ui-grid-c" style="padding-bottom:10px">
+			<div class="ui-block-a" style="font-family:'微软雅黑';">功能5</div>
+			<div class="ui-block-b" style="font-family:'微软雅黑';">功能6</div>
+			<div class="ui-block-c" style="font-family:'微软雅黑';">功能7</div>
+			<div class="ui-block-d" style="font-family:'微软雅黑';">功能8</div>
+		</div> -->
+		
+		<!-- Listview_two -->
+		<!--<ul data-role="listview" data-inset="true">
+			<li data-role="list-divider" data-theme="b">朋友圈</li>
+			<li data-theme="c">
+				<a href="#">
+					<img src="img/ktv.jpg" style="padding-top:15px;padding-left:10px;">
+					<p style="font-size:14px"><b>火锅店人数团购</b></p>
+					<p>开始时间：2016-04-16</p>
+					<p>结束时间：<span style="color:red">2016-06-16</span></p>
+				</a>
+			</li>
+			<li data-theme="c">
+				<a href="#">
+					<img src="img/youlechang.jpg" style="padding-top:15px;padding-left:10px;">
+					<p style="font-size:14px"><b>夏季葡萄采摘</b></p>
+					<p>开始时间：2016-04-16</p>
+					<p>结束时间：<span style="color:red">2016-06-16</span></p>
+				</a>
+			</li>
+			<li data-theme="c">
+				<a href="#">
+					<img src="img/shuiguodian.jpg" style="padding-top:15px;padding-left:10px;">
+					<p style="font-size:14px"><b>梨花沟踏青赏花</b></p>
+					<p>开始时间：2016-04-16</p>
+					<p>结束时间：<span style="color:red">2016-06-16</span></p>
+				</a>
+			</li>
+			<li data-theme="c">
+				<a href="#">
+					<img src="img/canting.jpg" style="padding-top:15px;padding-left:10px;">
+					<p style="font-size:14px"><b>花好月圆人欢聚</b></p>
+					<p>开始时间：2016-04-16</p>
+					<p>结束时间：<span style="color:red">2016-06-16</span></p>
+				</a>
+			</li>
+			<li data-icon="false" data-theme="b">
+				<a style="text-align: center;" href="#"><b>查看更多</b></a>
+			</li>
+		</ul>-->
+		
+		<!-- photo_one -->
+		<!--<div>
+                	        <img src="img/fullimage5.jpg" style="heiget:200px; width:100%"/>
+                   	<center><p style="padding-top:10px; font-size:14px; color:#666">世界这么大，</p></center>
+                    	<center><p style="padding-top:10px; font-size:14px; color:#666">我想去看看，</p></center>
+                   	<center><p style="padding-top:10px; font-size:14px; color:#666">说走咱就走，</p></center>
+                    	<center><p style="padding-top:10px; font-size:14px; color:#666">我们组个团？要不拼个游？</p> </center> 
+                    	<center><a href="#" data-role="button"  data-inline="true" data-mini="true" data-theme="f">查看详情></a></center>        
+			<hr align=left color=#nannannan size=1>
+		</div>-->
+		<hr align=left color=#nannannan size=1>
+		<div>
+                	        <img src="img/fullimage5.jpg" style="heiget:200px; width:100%"/>
+			<center><h2 style="padding-top:10px; font-weight:bold;">走过咖啡屋，踏上交友之旅</h2></center>
+			<center><p style="padding-top:10px; font-size:14px; color:#666">朋友，就是你玩乐的时候或许不在你的身边</p></center>
+                    	<center><p style="padding-top:10px; font-size:14px; color:#666">但是在你有难的时候一定在你身边。</p></center>
+                   	<center><p style="padding-top:10px; font-size:14px; color:#666">朋友，就是你吃喝的时候或许不在你的身边</p></center>
+                    	<center><p style="padding-top:10px; padding-bottom:5px; font-size:14px; color:#666">但是在你有难的时候一定在你身边！</p> </center> 
+                    	<center><a href="http://baike.so.com/doc/4378840-4585073.html" data-role="button"  data-inline="true" data-mini="true" data-theme="f">查看详情></a></center>        
+			<hr align=left color=#nannannan size=1>
+		</div>
+		
+		<!-- Travel -->
+		<div class="ui-grid-b"> 
+			<div class="ui-block-a" style="font-family:'微软雅黑';">
+				<a href="http://baike.so.com/doc/4378840-4585073.html"><img src="img/sobig/340997.jpg" style="padding-right:5px;padding-bottom:5px; padding-top:5px;" /></a>情侣游
+				<p style="padding-top:3px; font-size:10px; color:#ccc;">不只是长情告白</p>
+			</div>
+			<div class="ui-block-b" style="font-family:'微软雅黑';">
+				<a href="http://baike.so.com/doc/4378840-4585073.html"><img src="img/sobig/421812.jpg" style="padding-right:5px;padding-bottom:5px; padding-top:5px;" /></a>山水游
+				<p style="padding-top:3px; font-size:10px; color:#ccc;">最爱奇秀山水</p>
+			</div>
+			<div class="ui-block-c" style="font-family:'微软雅黑';">
+				<a href="http://baike.so.com/doc/4378840-4585073.html"><img src="img/sobig/502014.jpg" style="padding-right:5px;padding-bottom:5px; padding-top:5px;" /></a>亲子游
+				<p style="padding-top:3px; font-size:10px; color:#ccc;">换个方式疼宝贝</p>
+			</div>
+		</div>
+		<div class="ui-grid-b"> 
+			<div class="ui-block-a" style="font-family:'微软雅黑';">
+				<a href="http://baike.so.com/doc/4378840-4585073.html"><img src="img/sobig/589182.jpg" style="padding-right:5px; padding-bottom:5px; padding-top:5px;" /></a>自驾游
+				<p style="padding-top:3px; font-size:10px; color:#ccc;">心也随风驰骋</p>
+			</div>
+			<div class="ui-block-b" style="font-family:'微软雅黑';">
+				<a href="http://baike.so.com/doc/4378840-4585073.html"><img src="img/sobig/594414.jpg" style="padding-right:5px; padding-bottom:5px; padding-top:5px;" /></a>蜜月游
+				<p style="padding-top:3px; font-size:10px; color:#ccc;">万水千山总是情</p>
+			</div>
+			<div class="ui-block-c" style="font-family:'微软雅黑';">
+				<a href="http://baike.so.com/doc/4378840-4585073.html"><img src="img/sobig/596364.jpg" style="padding-right:5px; padding-bottom:5px; padding-top:5px;" /></a>独自游
+				<p style="padding-top:3px; font-size:10px; color:#ccc;">一个人的好时光</p>
+			</div>
+		</div>
+		
+		<!-- Guide -->
+		<div data-role="collapsible-set" data-theme="b" data-content-theme="b" style="padding-top:10px;">
+			<div data-role="collapsible" data-collapsed-icon="flat-bubble" data-expanded-icon="flat-cross" data-collapsed="false">
+				<h3>如何办理户口迁入手续</h3>
+				<p>一、由办证中心管辖范围的其他单位迁入微小区：</p>
+				<p>1、购房合同或房产证；</p>
+				<p>2、物业出具的住房证明信；</p>
+				<p>3、户口本；</p>
+				<p>4、两张黑白大头1寸照片；</p>
+			</div>
+			<div data-role="collapsible" data-collapsed-icon="flat-bubble" data-expanded-icon="flat-cross">
+				<h3>自来水缴费卡办理指南</h3>
+				<p>一、由成都其他地区迁入办证中心：</p>
+				<p>1、购房合同或房产证；</p>
+				<p>2、物业出具的住房证明信；</p>
+				<p>3、户口本；</p>
+				<p>4、两张黑白大头1寸照片；</p>
+			</div>
+			<div data-role="collapsible" data-collapsed-icon="flat-bubble" data-expanded-icon="flat-cross" style="padding-bottom:10px;">
+				<h3>新业主如何办理电卡</h3>
+				<p>一、由成都其他地区迁入办证中心：</p>
+				<p>1、购房合同或房产证；</p>
+				<p>2、物业出具的住房证明信；</p>
+				<p>3、户口本；</p>
+				<p>4、两张黑白大头1寸照片；</p>
+			</div>
+			<a href="http://baike.so.com/doc/4378840-4585073.html" data-role="button" data-corners="false">查看更多</a>
+		</div>
+		
+		<!-- photo_two -->
+		<div>
+                	        <img src="img/fullimage3.jpg" style="heiget:200px; width:100%; padding-top:10px;"/>
+                   	<center><p style="padding-top:10px; font-size:14px; color:#666">你对社区不满意？</p></center>
+                    	<center><p style="padding-top:10px; font-size:14px; color:#666">或者您有更好的意见？</p></center>
+                   	<center><p style="padding-top:10px; font-size:14px; color:#666">快来告诉我们吧！</p></center>
+                    	<center><p style="padding-top:10px; padding-bottom:5px; font-size:14px; color:#666">您的每一个意见我们都会认真协商！</p> </center> 
+                    	<center><a href="http://baike.so.com/doc/4378840-4585073.html" data-role="button"  data-inline="true" data-mini="true" data-theme="f">我有意见></a></center>        
+			<hr align=left color=#nannannan size=1>
+		</div>
+
+		<!-- Calendar -->
+		<ul data-role="listview" data-inset="true" style="padding-bottom:10px;">
+			<li data-role="list-divider" data-theme="b">
+				星期二, 4 月 5 日, 2016 
+				<span class="ui-li-count">2</span>
+			</li>   
+			<li data-theme="c">
+				<a href="#">   
+					<h2>调价窗口今日开启</h2>
+					<p>要加油的车主别着急，再熬一熬，油就降价啦，</p>
+					<p>根据“十个工作日调整”的原则，成品价搁浅后，</p>
+					<p>A进入10月中旬以来，国际原油市场逐渐退去，</p>
+					<p>截至10月29日即第九个工作日变化率为-2.28%，</p>
+					<p>新一轮调价窗口将于10月31日开启，将于周五零时执行。</p>
+					<p class="ui-li-aside">Re: 社区办公室</p>
+				</a>
+			</li>
+			<li data-theme="c">
+				<a href="#">
+					<h2>厦门人口调查11月启动</h2>
+					<p>R11月1日起，如果有统计人到您家抽样调查，</p>
+					<p>2013年人口变动调查时点为:2013年11月时，</p>
+					<p>与往年不同的是，今年人口变动抽的指标。</p>
+					<p>本次调查全市共涉及29个镇街调查小区数110个。</p>
+					<p class="ui-li-aside">Re: 社区办公室</p>
+				</a>
+			</li>
+			<li data-role="list-divider" data-theme="b">
+				星期一, 4 月 4 日, 2016 
+				<span class="ui-li-count">1</span>
+			</li>   
+			<li data-theme="c">
+				<a href="#">   
+					<h2>厦门建"以奖代补"机制</h2>
+					<p>村里的土路重新拓宽整修，仙景芋种郁葱葱，</p>
+					<p>以田头村为例，此次整治工程立面进行整治，</p>
+					<p>据了解，我市建立起以奖励代补”激励机制，</p>
+					<p>鼓励群众参与乡村建设。比如，鼓励村民参与村庄美化...</p>
+					<p class="ui-li-aside">Re: 社区办公室</p>
+				</a>
+			</li>
+		</ul>
+		
+		<hr align=left color=#nannannan size=1>
+		<center><a href="#find" data-rel="dialog" data-ajax="false" id="a_bottom">查看更多</a></center>
+		
+		<!-- Login & Register -->
+		<!-- hide功能未实现(需要删除jquery.mobile-1.4.0-rc.1.js才可以) -->
+		
+		<!--<ul> 测试时使用 
+			<li class="main-nav"><a href="#0">点我~</a></li>
+		</ul>-->
+		<!-- <div class="cd-user-modal"> 
+			<div class="cd-user-modal-container"> 
+				<ul class="cd-switcher">
+					<li><a href="#0">登录</a></li>
+					<li><a href="#0">注册</a></li>
+				</ul>
+				<div id="cd-login">
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="signin-email">E-mail</label>
+							<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signin-password">Password</label>
+							<input class="full-width has-padding has-border" id="signin-password" type="password" placeholder="Password">
+							<a href="#0" class="hide-password">Show</a>
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+						<p class="fieldset">
+							<input data-theme="b" type="checkbox" id="remember-me" checked>
+							<label for="remember-me">记住密码</label>
+						</p>
+						<p class="fieldset">
+							<input class="full-width" type="submit" value="登陆" data-theme="b">
+						</p>
+					</form>
+					<p class="cd-form-bottom-message"><a href="#0">忘记密码?</a></p>
+				</div> 
+				<div id="cd-signup"> 
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-username" for="signup-username">Username</label>
+							<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="signup-email">E-mail</label>
+							<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signup-password">Password</label>
+							<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+							<a href="#0" class="hide-password">Show</a>
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+						<p class="fieldset">
+							<input class="full-width has-padding" type="submit" value="创建用户" data-theme="b">
+						</p>
+					</form>
+				</div> 
+				<div id="cd-reset-password">
+					<p class="cd-form-message">忘记密码了？快输入你的邮箱地址，然后重新创建一个新的密码吧~</p>
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="reset-email">E-mail</label>
+							<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail" data-theme="b">
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+						<p class="fieldset">
+							<input class="full-width has-padding" type="submit" value="重置密码" data-theme="b">
+						</p>
+					</form>
+					<p class="cd-form-bottom-message"><a href="#0">返回登录</a></p>
+				</div>
+				<a href="#0" class="cd-close-form">Close</a>
+			</div> 
+		</div>  -->
+		
+		<!--<div class="ui-grid-c" style="padding-top:20px;">
+			<div class="ui-block-a"><span>第一个列</span></div>
+			<div class="ui-block-b"><span>第二个列</span></div>
+			<div class="ui-block-c"><span>第三个列</span></div>
+			<div class="ui-block-d"><span>第四个列</span></div>
+		</div>
+		<div class="ui-grid-c">
+			<div class="ui-block-a"><span>第一个列</span></div>
+			<div class="ui-block-b"><span>第二个列</span></div>
+			<div class="ui-block-c"><span>第三个列</span></div>
+			<div class="ui-block-d"><span>第四个列</span></div>
+		</div>
+		<div class="ui-grid-c">
+			<div class="ui-block-a"><span>第一个列</span></div>
+			<div class="ui-block-b"><span>第二个列</span></div>
+			<div class="ui-block-c"><span>第三个列</span></div>
+			<div class="ui-block-d"><span>第四个列</span></div>
+		</div>-->
+	</div>
+
+	<div data-role="footer"  data-position="fixed" data-theme="b">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#" data-icon="flat-heart"  style="border: none;" class="ui-btn-active">智慧民生</a></li>
+				<li><a href="appoint.html" data-ajax="false" data-icon="flat-bubble"  style="border: none;">众筹平台</a></li>
+				<li><a href="referendum.html" data-ajax="false" data-icon="flat-new"  style="border: none;">公投平台</a></li>
+				<li><a href="share.html" data-ajax="false" data-icon="flat-eye"  style="border: none;">共享社区</a></li>
+				<li><a href="friend.html" data-ajax="false" data-icon="flat-man"  style="border: none;">朋友圈</a></li>
+			</ul>
+		</div>
+	</div>
+  
+</div> 
+
+</body>
+</html>

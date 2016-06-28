@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/owl.carousel.css"><!-- Exhibition -->
+<link rel="stylesheet" href="css/owl.theme.css"><!-- Exhibition_theme -->
+<link rel="stylesheet" href="css/jquery.mobile.flatui.css" type="text/css"/><!-- App_thteme -->
+<link rel="stylesheet" href="css/mmenu.css" type="text/css"/><!-- Nav_css -->
+<link rel="stylesheet" href="css/jquery.mmenu.css" type="text/css"/><!-- Nav_css -->
+<link rel="stylesheet" href="css/font.css" type="text/css"><!-- Font_css -->
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+<script src="js/main.js"></script> <!-- Gem jQuery -->
+<script src="js/jquery.js"></script><!-- jQuery -->
+<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+<script src="js/owl.carousel.js"></script><!-- Exhibition -->	
+<script>$(function(){$('#owl-play').owlCarousel({singleItem: true});});</script>
+<style>	
+	p,h2,a,li,ul{font-family: '微软雅黑';}
+	.ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d{text-align: center;}
+</style>
+
+<!-- 定制功能 -->
+<script>
+            $(function () {
+                $("#join").click(function () {
+                    var select_one = $("#livelihood").val();                  
+                    var select_two = $("#funding").val();
+                    var select_three = $("#share").val();
+                    var select_four = $("#referendum").val();
+                    var select_five = $("#friends").val();
+                    var all=select_one.concat(select_two,select_three,select_four,select_five);
+ 
+                    var o = {};
+                    o.pos_one = all[0];
+                    o.pos_two = all[1];
+                    o.pos_three = all[2];
+                    o.pos_four = all[3];
+                    o.pos_five = all[4];
+                    o.pos_six = all[5];
+                    o.pos_seven = all[6];
+                    o.user_id = 4;
+                    
+                    $.post("/ant_c/page_create",
+                            {
+                                json: JSON.stringify(o)
+                            },
+                    function (data) {
+                        if(data.result == "功能选择成功啦！" || data.result == "功能修改成功啦！"){
+                             alert(data.result);
+                             window.location.href = "again.html";
+                        }else{
+                            alert("功能选择失败！");
+                        }
+                    },
+                            "json");
+                });
+            });
+</script>
+</head>
+<body>
+	<div data-role="page" id="download" data-theme="b">
+		<div class="header">
+			<p style="text-align:center;font-size:17px;">欢迎来到AC社区</p>
+		</div>
+		
+		<div data-role="content">
+			<input type="text" placeholder="开始定制您的专属APP吧！" style="text-align:center;" readonly="readonly"/>
+			<!-- Choice_One -->
+			<img src="img/340997.jpg" style="heiget:200px; width:100%"/> 
+			<center><h2 style="padding-top:10px; font-weight:bold;">细节决定成败，态度成就完美</h2></center>
+					 <center><p style="padding-top:10px; font-size:14px; color:#666">这里有最齐全的社区服务，</p></center>
+					 <center><p style="padding-top:10px; font-size:14px; color:#666">这里有最贴心的社区功能，</p></center>
+					 <center><p style="padding-top:10px; font-size:14px; color:#666">我们提出“社区，不只是一个住所”的口号，</p></center>
+					 <center><p style="padding-top:10px; font-size:14px; color:#666">我们秉承服务和安全的理念，</p></center>
+					 <center><p style="padding-top:10px; padding-bottom:5px; font-size:14px; color:#666">致力于为社区居民构建一个全新的沟通服务平台！</p> </center> 
+			<form method="post" action="">
+				<fieldset>
+					<select name="livelihood" id="livelihood" multiple="multiple" data-native-menu="false" data-theme="b">
+						<option>智慧民生</option>
+						<option value="1">缴水费</option>
+						<option value="2">缴电费</option>
+						<option value="3">缴物业费</option>
+						<option value="4">社区O2O</option>
+						<option value="5">生活导航</option>
+						<option value="6">虚拟服务</option>
+						<option value="7">家政服务</option>
+					</select>
+				</fieldset>
+			</form>
+			<hr align=left color=#nannannan size=1>
+			
+			<!-- Choice_Two -->
+			<img src="img/589182.jpg" style="heiget:200px; width:100%"/> 
+			<center><h2 style="padding-top:10px; font-weight:bold;">众筹之间，情义无间</h2></center>
+					<center><p style="padding-top:10px; font-size:14px; color:#666">每人出一份力，社区未来将更加美好，</p></center>
+					 <center><p style="padding-top:10px; font-size:14px; color:#666">我们虽身处城市，可仍能为需要的人们做些什么，</p></center>
+					 <center><p style="padding-top:10px; font-size:14px; color:#666">社区虽小，众筹之间，情义无间，</p></center>
+					 <center><p style="padding-top:10px; padding-bottom:5px; font-size:14px; color:#666">或许在你不经意间，便收获了满车的芬芳。</p> </center> 
+			<form method="post" action="">
+				<fieldset>
+					<select name="funding" id="funding" multiple="multiple" data-native-menu="false" data-theme="b">
+						<option>众筹平台</option>
+						<option value="8">设施众筹</option>
+						<option value="9">公益众筹</option>
+						<option value="10">活动众筹</option>
+						<option value="11">导医服务</option>
+					</select>
+				</fieldset>
+			</form>
+			<hr align=left color=#nannannan size=1>
+					
+			<!-- Choice_Three -->
+			<img src="img/474942.jpg" style="heiget:200px; width:100%"/>
+			<center><h2 style="padding-top:10px; font-weight:bold;">分享是阳光，温暖你我的世界</h2></center>
+					 <center><p style="padding-top:10px; font-size:14px; color:#666">欢笑由两个人分享，</p></center>
+					 <center><p style="padding-top:10px; font-size:14px; color:#666">快乐将会加倍；</p></center>
+					 <center><p style="padding-top:10px; font-size:14px; color:#666">痛苦由两个人分担，</p></center>
+					 <center><p style="padding-top:10px; font-size:14px; color:#666">痛苦也将减半。</p></center>
+					 <center><p style="padding-top:10px; padding-bottom:5px; font-size:14px; color:#666">把关心分享给他人，他人也会给你分享真心。</p> </center> 
+			<form method="post" action="">
+				<fieldset>
+					<select name="share" id="share" multiple="multiple" data-native-menu="false" data-theme="b">
+						<option>共享社区</option>
+						<option value="12">停车位共享</option>
+						<option value="13">出行顺风车</option>
+						<option value="14">二手交易市场</option>
+						<option value="15">经验分享论坛</option>
+						<option value="16">其他资源服务</option>
+					</select>
+				</fieldset>
+			</form>
+			<hr align=left color=#nannannan size=1>
+					
+			<!-- Choice_Four -->
+			<img src="img/502014.jpg" style="heiget:200px; width:100%"/> 
+			<center><h2 style="padding-top:10px; font-weight:bold;">每一位居民都是社区的主人</h2></center>
+					<center><p style="padding-top:10px; font-size:14px; color:#666">您的每一个建议对于我们都弥足珍贵，</p></center>
+					 <center><p style="padding-top:10px; font-size:14px; color:#666">您的每一次批评我们都会认真改正，</p></center>
+					 <center><p style="padding-top:10px; font-size:14px; color:#666">社区是我们共同的家园，</p></center>
+					 <center><p style="padding-top:10px; padding-bottom:5px; font-size:14px; color:#666">社区的未来一定会更加美好！</p> </center> 
+			<form method="post" action="">
+				<fieldset>
+					<select name="referendum" id="referendum" multiple="multiple" data-native-menu="false" data-theme="b">
+						<option>公投平台</option>
+						<option value="17">物业评价</option>
+						<option value="18">决策投票</option>
+						<option value="19">改善意见</option>
+					</select>
+				</fieldset>
+			</form>
+			<hr align=left color=#nannannan size=1>
+					
+			<!-- Choice_Five -->
+			<img src="img/596364.jpg" style="heiget:200px; width:100%"/>
+			<center><h2 style="padding-top:10px; font-weight:bold;">人生所贵在知己</h2></center>
+					 <center><p style="padding-top:10px; font-size:14px; color:#666">朋友，是生命在平凡中绽放的灿烂光辉；</p></center>
+					 <center><p style="padding-top:10px; font-size:14px; color:#666">是欢乐在泪光中闪烁的光泽；</p></center>
+					 <center><p style="padding-top:10px; padding-bottom:5px; font-size:14px; color:#666">人生知己难求，得一知己，便不枉此生。</p> </center> 
+			<form method="post" action="">
+				<fieldset>
+					<select name="friends" id="friends" multiple="multiple" data-native-menu="false" data-theme="b">
+						<option>交流平台</option>
+						<option value="20">社区公告</option>
+						<option value="21">办事指南</option>
+						<option value="22">生活贴士</option>
+						<option value="23">朋友圈</option>
+						<option value="24">社区政务</option>
+					</select>
+				</fieldset>
+			</form>
+			<hr style="margin-top:0px;" align=left color=#nannannan size=1>
+					<center><a href="#" id="join" data-ajax="false" data-role="button" data-theme="f">加入我们！</a></center>
+	<!--		<div class="ui-grid-a">
+						<div class="ui-block-b"><a href="again.html" data-ajax="false" data-role="button" data-theme="f" data-inline="true">Join us</a></div>
+				<div class="ui-block-a"><a href="#dialog" data-rel="popup" data-role="button" data-theme="f" data-inline="true">Give up</a></div>
+			</div>-->
+	<!--		<div data-role="popup" id="dialog">
+				<div data-role="header" data-theme="b">
+					<h1>要离开了吗?</h1>
+				</div>
+				<div data-role="content">
+					<h3 style="font-family:'微软雅黑';">您真的确定要离开我们吗？</h3>
+					<a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c">No</a>
+					<a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="b">Yes，Leave</a>
+				</div>
+			</div>      -->
+		</div>
+		<!--<a class="item"><img src="img/900x300.png" alt="" style="padding-top:20px;"></a>-->
+	</div>
+</body>
+</html>

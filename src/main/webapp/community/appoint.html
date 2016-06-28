@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--自适应屏幕-->
+<meta name="viewport" content="width=device-width , initial-scale=1" />
+<!--主题-->
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css"/>
+<link rel="stylesheet" href="css/mmenu.css" type="text/css"/><!-- Nav_css -->
+<link rel="stylesheet" href="css/jquery.mmenu.css" type="text/css"/><!-- Nav_css -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+<!-- <script>$(function() {$('#menu').mmenu();});</script> -->
+<style>	
+	p,h2,a,li,ul{font-family: '微软雅黑';}
+	.ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d{text-align: center;}
+	a:link { text-decoration:none;} 
+</style>
+</head>
+
+<body>
+
+  <div data-role="page" id="pageone" data-theme="b">
+		 <div class="header">
+			<a href="#menu" class="menu"></a>
+			<p style="text-align:center;">欢迎来到AC社区</p>
+			<div class="main-nav"><a href="#mmenu" class="contacts" data-inline="true" data-iconpos="notext" data-rel="popup"></a></div>		
+			<div data-role="popup" id="mmenu" data-theme="b">
+				<ul data-role="listview" data-inset="true">
+				   <li><a href="#pagetwo" data-rel="dialog" data-position-to="window" data-transition="pop">创建活动</a></li> 
+				 <li><a href="myactivity.html" data-ajax="false">我的活动<span class="ui-li-count">0</span></a></li>
+				  <li><a href="order.html" data-ajax="false">我的订单</a></a></li>
+				</ul>
+			</div>
+		</div> 
+		
+	<!-- Left_nav -->
+	<nav id="menu">
+		<ul>
+			<li style="text-align:center;">
+				<img src="img/user.png" alt="">
+				<p style="color:white;margin-top:11px;">特伦宁</p>
+			</li>
+			<li><a href="again.html" data-ajax="false" style="color:white;">消息中心</a>
+				<ul>
+					<li><a href="again.html" data-ajax="false" style="color:white;">1 . 新功能上线啦!</a>
+						<ul>
+							<p style="color:white; padding-top:5px; line-height:30px; text-indent:2em">&nbsp;&nbsp;11月6日，国内首个县域智慧城市服务平台“和沐生活”APP上线新闻发布
+							暨电子商务研讨会在安徽省安庆市潜山县举行。会上，潜山县商务局与潜山和沐商业管理有限公司（下文简称和沐商业）签订了共同
+							打造“智慧潜山”的战略框架协议。近年来，随着我国“互联网+”战略的迅速推进，“智慧城市”与普通百姓的生活渐行渐近。据统计，
+							截至今年上半年，我国已公布3批国家智慧城市试点共计277个，总计规划投资近万亿元，但县域级智慧城市建设还相对滞后。</p>
+						</ul>
+					</li>
+					<li><a href="again.html" data-ajax="false" style="color:white;">2 . 水电物业费月底账单</a>
+						<ul>
+							<li><a href="again.html" data-ajax="false" style="color:white;">水费：100¥</a></li>
+							<li><a href="again.html" data-ajax="false" style="color:white;">电费：300¥</a></li>
+							<li><a href="again.html" data-ajax="false" style="color:white;">物业费：50¥</a></li>
+							<li><a href="again.html" data-ajax="false" style="color:white;">总计：450¥</a></li>
+						</ul>
+					</li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">3 . 社区新活动，快来参加</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">4 . 社区百科知识竞赛</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">5 . 有人邀请你进入新的讨论组</a></li>
+				</ul>
+			</li>
+			<li><a href="again.html" data-ajax="false" style="color:white;">我的活动</a>
+				<ul>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">1 . 我的活动 1</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">2 . 我的活动 2</a>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">3 . 我的活动 3</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">4 . 我的活动 4</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">5 . 我的活动 5</a>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">6 . 我的活动 6</a></li>
+				</ul>
+			</li>
+			<li><a href="again.html" data-ajax="false" style="color:white;">我的收藏</a>
+				<ul>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">1 . 我的收藏 1</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">2 . 我的收藏 2</a>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">3 . 我的收藏 3</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">4 . 我的收藏 4</a></li>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">5 . 我的收藏 5</a>
+					<li><a href="http://baike.so.com/doc/4378840-4585073.html" style="color:white;">6 . 我的收藏 6</a></li>
+				</ul>
+			</li>
+			<li><a href="again.html" style="color:white;" data-ajax="false">修改业主信息</a></li>
+			<li><a href="again.html" style="color:white;" data-ajax="false">更换绑定小区</a></li>
+			<li><a href="again.html" style="color:white;" data-ajax="false">退出登录</a></li>
+		</ul>
+	</nav>
+    <div data-role="content" data-filter="true" data-filter-placeholder="快搜索您喜爱的活动吧！">
+        <!--<a href="#">
+          <div style="width:100%;height:300px;background:url(images/pic.jpg)">
+          <p style="font:bold 14px 微软雅黑;color:#ffffff">智慧社区</p>
+          <p style="font:normal 14px 微软雅黑;color:#ffffff">细节决定成败，态度成就完美</p>
+          </div>
+        </a>-->
+	  <ul data-role="listview" data-inset="true" style="margin-top:-10px;">
+        <li data-role="list-divider" style="font-size:18px">青少年活动</li>
+        <li data-theme="c">
+          <a href="activity0001.html" data-ajax="false">
+            <img src="images/pic0001.jpg" style="padding-top:53px;padding-left:10px;" />
+            <p style="font-size:16px;font-weight:bold;margin-left:-80px;">用书法撬动你的人生</p>
+			<p style="color:gray">时间：2016.4.14/p>
+            <p style="color:gray">地点：南京市·浦口区</p>
+            <p style="color:orange">活动进行中...<span style="float:right;padding-right:2px;color:green;font-size:16px">免费</span></p>
+          </a>
+        </li>
+        <li data-theme="c">
+          <a href="activity0002.html"  data-ajax="false">
+            <img src="images/pic0002.jpg" style="padding-top:53px;padding-left:10px;" />
+            <p style="font-size:16px;font-weight:bold;margin-left:-80px;">去南京大屠杀纪念馆吧</p>
+			<p style="color:gray">时间：2016.4.16</p>
+            <p style="color:gray">地点：南京市·建邺区</p>
+            <p style="color:blue">距离活动开始还有2天<span style="float:right;padding-right:2px;color:green;font-size:16px">免费</span></p>
+          </a>
+        </li>
+		<li data-theme="c">
+          <a href="activity0003.html"  data-ajax="false">
+            <img src="images/pic0003.jpg" style="padding-top:53px;padding-left:10px;" />
+            <p style="font-size:16px;font-weight:bold;margin-left:-80px;">五一军营亲子活动</p>
+			<p style="color:gray">时间：2016.5.1</p>
+            <p style="color:gray">地点：杭州市·西湖区</p>
+            <p style="color:blue">距离活动开始还有16天<span style="float:right;padding-right:2px;color:green;font-size:16px">¥180</span></p>
+          </a>
+        </li>
+        <li><a href="#">查看更多</a></li>
+      </ul>
+      <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider" style="font-size:18px">青年活动</li>
+        <li data-theme="c">
+          <a href="activity1001.html" data-ajax="false">
+            <img src="images/pic1001.jpg" style="padding-top:53px;padding-left:10px;" />
+            <p style="font-size:16px;font-weight:bold;margin-left:-80px;">南京单身交友聚会</p>
+			<p style="color:gray">时间：2016.4.13-2016.5.31</p>
+            <p style="color:gray">地点：南京市·玄武区</p>
+            <p style="color:orange">活动进行中...<span style="float:right;padding-right:2px;color:green;font-size:16px">免费</span></p>
+          </a>
+        </li>
+        <li data-theme="c">
+          <a href="activity1002.html" data-ajax="false">
+            <img src="images/pic1002.jpg" style="padding-top:53px;padding-left:10px;" />
+            <p style="font-size:16px;font-weight:bold;margin-left:-80px;">“新世纪杯”保龄球交流赛</p>
+			<p style="color:gray">时间：2016.4.16</p>
+            <p style="color:gray">地点：南京市·秦淮区</p>
+            <p style="color:blue">距离活动开始还有2天<span style="float:right;padding-right:2px;color:green;font-size:16px">¥30起</span></p>
+          </a>
+        </li>
+		<li data-theme="c">
+          <a href="activity1003.html" data-ajax="false">
+            <img src="images/pic1003.jpg" style="padding-top:53px;padding-left:10px;" />
+            <p style="font-size:16px;font-weight:bold;margin-left:-80px;">沙画艺术体验活动</p>
+			<p style="color:gray">时间：2016.4.10-2017.4.10</p>
+            <p style="color:gray">地点：南京市·浦口区</p>
+            <p style="color:orange">活动进行中...<span style="float:right;padding-right:2px;color:green;font-size:16px">免费</span></p>
+          </a>
+        </li>
+        <li><a href="#">查看更多</a></li>
+      </ul>
+      <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider" style="font-size:18px">中年活动</li>
+        <li data-theme="c">
+          <a href="activity2001.html" data-ajax="false">
+            <img src="images/pic2001.jpg" style="padding-top:53px;padding-left:10px;" />
+            <p style="font-size:16px;font-weight:bold;margin-left:-80px;">“低碳环保·快乐装修”大型家装知识讲座</p>
+			<p style="color:gray">时间：2016.4.30-2016.5.1</p>
+            <p style="color:gray">地点：南京市·浦口区</p>
+            <p style="color:blue">距离活动开始还有15天<span style="float:right;padding-right:2px;color:green;font-size:16px">免费</span></p>
+          </a>
+        </li>
+        <li data-theme="c">
+          <a href="#">
+            <img src="images/pic2002.jpg" style="padding-top:53px;padding-left:10px;" />
+            <p style="font-size:16px;font-weight:bold;margin-left:-80px;">春暖花开，结伴春游</p>
+			<p style="color:gray">时间：2016.4.30-2016.5.1</p>
+            <p style="color:gray">地点：苏州市</p>
+            <p style="color:blue">距离活动开始还有15天<span style="float:right;padding-right:2px;color:green;font-size:16px">¥599起</span></p>
+          </a>
+        </li>
+		<li data-theme="c">
+          <a href="#">
+            <img src="images/pic2003.jpg" style="padding-top:53px;padding-left:10px;" />
+            <p style="font-size:16px;font-weight:bold;margin-left:-80px;">如何提升股票知识</p>
+			<p style="color:gray">时间：2016.4.17</p>
+            <p style="color:gray">地点：南京市·浦口区</p>
+            <p style="color:blue">距离活动开始还有3天<span style="float:right;padding-right:2px;color:green;font-size:16px">免费</span></p>
+          </a>
+        </li>
+        <li><a href="#">查看更多</a></li>
+      </ul>
+      <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider" style="font-size:18px">老年活动</li>
+        <li data-theme="c">
+          <a href="activity3001.html" data-ajax="false">
+            <img src="images/pic3001.jpg" style="padding-top:53px;padding-left:10px;" />
+            <p style="font-size:16px;font-weight:bold;margin-left:-80px;">广场舞·一起嗨</p>
+			<p style="color:gray">时间：2016.3.1-2017.3.1</p>
+            <p style="color:gray">地点：南京市·浦口区</p>
+            <p style="color:orange">活动进行中...<span style="float:right;padding-right:2px;color:green;font-size:16px">免费</span></p>
+          </a>
+        </li>
+        <li data-theme="c">
+          <a href="#">
+            <img src="images/pic3002.jpg" style="padding-top:53px;padding-left:10px;" />
+            <p style="font-size:16px;font-weight:bold;margin-left:-80px;">交际舞</p>
+			<p style="color:gray">时间：2016.5.1-2016.6.30</p>
+            <p style="color:gray">地点：南京市·浦口区</p>
+            <p style="color:blue">距离活动开始还有16天<span style="float:right;padding-right:2px;color:green;font-size:16px">免费</span></p>
+          </a>
+        </li>
+		<li data-theme="c">
+          <a href="#">
+            <img src="images/pic3003.jpg" style="padding-top:53px;padding-left:10px;" />
+            <p style="font-size:16px;font-weight:bold;margin-left:-80px;">一起来跳广场舞吧</p>
+			<p style="color:gray">时间：2016.4.5-2016.12.31</p>
+            <p style="color:gray">地点：南京市·浦口区</p>
+            <p style="color:orange">活动进行中...<span style="float:right;padding-right:2px;color:green;font-size:16px">免费</span></p>
+          </a>
+        </li>
+        <li><a href="#">查看更多</a></li>
+      </ul>
+	</div>
+	<div data-role="footer"  data-position="fixed" data-theme="b">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="again.html" data-ajax="false" data-icon="flat-heart"  style="border: none;">智慧民生</a></li>
+				<li><a href="#" data-ajax="false" data-icon="flat-bubble" class="ui-btn-active" style="border: none;">众筹平台</a></li>
+				<li><a href="referendum.html" data-ajax="false" data-icon="flat-new"  style="border: none;">公投平台</a></li>
+				<li><a href="share.html" data-ajax="false" data-icon="flat-eye"  style="border: none;">共享社区</a></li>
+				<li><a href="friend.html" data-ajax="false" data-icon="flat-man"  style="border: none;">朋友圈</a></li>
+			</ul>
+		</div>
+	</div>
+  </div>
+  
+  <!--创建活动按钮触发的对话框-->
+  <div data-role="page" id="pagetwo" data-theme="b">
+    <div data-role="header">
+      <h1>创建活动</h1>
+    </div>
+    <div data-role="content">
+      <form method="post" action="#">
+        <div data-role="fieldcontain">       
+          <fieldset data-role="fieldcontain">
+            <label for="flag">活动标签：</label>
+            <select name="flag" id="flag" data-theme="c">
+              <option value="early">青少年</option>
+              <option value="young">青年</option>
+              <option value="middle">中年</option>
+              <option value="old">老年</option>
+            </select>
+          </fieldset>
+          <hr/>
+          <label for="subject">活动主题：</label>
+          <input type="text" name="subject" id="subject">
+          <label for="starttime">开始时间：</label>
+          <input type="datetime-local" name="starttime" id="starttime">
+          <label for="endtime">结束时间：</label>
+          <input type="datetime-local" name="endtime" id="endtime">
+          <label for="num">人数上限：</label>
+          <input type="number" name="num" id="num">
+          <label for="fee">活动费用：</label>
+          <input type="number" name="fee" id="fee">
+          <label for="address">活动地址：</label>
+          <input type="text" name="address" id="address">
+          <label for="cover">活动封面：</label>
+          <input type="file" name="cover" id="cover">
+          <label for="content">活动简介：</label>
+          <textarea name="content" id="content" placeholder="活动内容"></textarea></fieldset>
+        </div>
+        <hr/>
+        <a href="#" data-role="button" data-rel="back" data-inline="true" data-theme="c">取消</a>
+        <input type="submit" data-inline="true" value="发布">
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>

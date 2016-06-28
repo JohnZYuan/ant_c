@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="3.013" errors="0" skipped="0" tests="2" name="edu.jlxy.controller.PageControlerTest">
+<testsuite failures="0" time="2.977" errors="0" skipped="0" tests="2" name="edu.jlxy.controller.PageControlerTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\Java\jdk1.7.0_75\jre\bin"/>
@@ -61,6 +61,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="2.877" classname="edu.jlxy.controller.PageControlerTest" name="dbPageLoadTest"/>
-  <testcase time="0.136" classname="edu.jlxy.controller.PageControlerTest" name="dbPageCreateTest"/>
+  <testcase time="2.83" classname="edu.jlxy.controller.PageControlerTest" name="dbPageLoadTest"/>
+  <testcase time="0.147" classname="edu.jlxy.controller.PageControlerTest" name="dbPageCreateTest"/>
 </testsuite>

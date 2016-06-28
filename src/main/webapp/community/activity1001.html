@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--自适应屏幕-->
+<meta name="viewport" content="width=device-width , initial-scale=1" />
+<!--主题-->
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css"/>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+<title>活动详情</title>
+</head>
+<style>
+*{
+  font-family:"微软雅黑";
+}
+</style>
+<body>
+
+  <div data-role="page" id="pageone" data-theme="b">
+    <div data-role="header" data-position="fixed">
+      <a href="appoint.html" data-role="button" data-icon="flat-cross" data-inline="true" data-iconpos="notext" data-ajax="false">返回</a>
+      <h1>活动详情</h1>
+      <a href="#menu" data-role="button" data-icon="star" data-inline="true" data-iconpos="notext" data-rel="popup">分享</a>
+    </div>
+    <div data-role="content">
+      <img src="images/pic1001.jpg" style="width:100%;height:220px;" />
+	  <p style="border-bottom:1px solid #b5b5b5;"><a href="#" data-role="button" data-icon="flat-cmd" data-inline="true" data-iconpos="notext"></a>南京单身交友聚会</p>
+	  <p style="border-bottom:1px solid #b5b5b5;"><a href="#" data-role="button" data-icon="flat-time" data-inline="true" data-iconpos="notext"></a>2016.4.12 - 2016.5.31&nbsp;&nbsp;&nbsp;18:30 - 21:30</p>
+	  <p style="border-bottom:1px solid #b5b5b5;"><a href="#" data-role="button" data-icon="flat-location" data-inline="true" data-iconpos="notext"></a>南京市·玄武区</p>
+	  <p style="border-bottom:1px solid #b5b5b5;"><a href="#" data-role="button" data-icon="flat-man" data-inline="true" data-iconpos="notext"></a>不限</p>
+	  <p style="border-bottom:1px solid #b5b5b5;"><a href="#" data-role="button" data-icon="flat-heart" data-inline="true" data-iconpos="notext"></a>免费</p>
+	  <div data-role="collapsible" data-collapsed="false">
+        <h4>简介</h4>
+        <p>青春不常在，抓紧谈恋爱~</p>      
+        <p>没有永远单身的人，只有不敢勾搭的人。</p>
+        <p>有多少人的单身宣言，一直是“我在等那个合适的人出现”。</p>
+        <p>可现实是，随着年龄的增长，遇到合适人的概率越来越低，能认识的就更少了。同学同事中没一个合适的，婚介服务咱看不上，交友网站又没管用。</p>
+        <p>想要遇见生命中的那个人，除了有缘千里来相会的运气，还要有走出自己小世界的勇气。不出来聚会，你是在等待对象去你家里敲门吗？</p>
+        <p>大家都知道捕鱼要到鱼多的地方捕，那找对象没有别的好办法，只有到单身人士多的地方找。</p>
+        <p>如果你是单身，正是适龄，千万不要错过这个好机会，抓紧报名参加我们的单身聚会吧！</p>
+        <p>在这里：也许结识一个可以谈天说地的好朋友；也许结识一个能说私房话的姐们儿；也许结识一个下班后可以喝喝小酒、侃侃大山的哥们儿；也许结识一个商务合作、共同发展事业的伙伴；也许遇见你期盼已久的Ta！</p>
+        <p>俗话说得好“缘在天定，份乃人为”嘛，多给自己创造机会没错的!</p>
+        <p>【活动人群】在南京，单身，大专及以上，工作稳定，热爱生活，真诚靠谱</p>
+        <p>【活动要求】需出示身份证，实名登记，提前报名</p>
+        <p>【活动费用】免费（活动场地没有任何酒水，纯活动）</p>
+        <p>【报名/咨询】报名发送姓名+性别+年龄+学历+职业到123456789，或打电话咨询</p>
+      </div>
+	  <ul data-role="listview" data-inset="true">
+        <li data-icon="plus" data-theme="c">
+          <a href="#" style="border-right:1px solid #dcdcdc;"><h6>联系人</h6></a>
+		  <a href="#dialog" data-rel="popup" data-icon="flat-man" data-position-to="window" data-transition="slideup">拨打电话</a>
+          <div data-role="popup" id="dialog" data-theme="c">
+            <div data-role="content" data-theme="d">
+              <p>拨打电话<a href="tel:+123456789">123456789</a></p>
+              <a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c">取消</a>
+              <a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="b">确定</a>
+            </div>
+          </div>      
+        </li>
+      </ul>
+	  <br/>
+	  
+	</div>
+    <div data-role="footer" data-position="fixed" data-theme="c">
+	  <center><input type="button" data-inline="true" data-rel="back" data-theme="d" value="报名参加"></center>
+    </div> 
+  </div>
+
+  
+</body>
+</html>

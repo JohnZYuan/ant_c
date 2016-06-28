@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/owl.carousel.css"><!-- Exhibition -->
+<link rel="stylesheet" href="css/owl.theme.css"><!-- Exhibition_theme -->
+<link rel="stylesheet" href="css/jquery.mobile.flatui.css" type="text/css"/><!-- App_thteme -->
+<link rel="stylesheet" href="css/mmenu.css" type="text/css"/><!-- Nav_css -->
+<link rel="stylesheet" href="css/jquery.mmenu.css" type="text/css"/><!-- Nav_css -->
+<link rel="stylesheet" href="css/font.css" type="text/css"><!-- Font_css -->
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+<script src="js/main.js"></script> <!-- Gem jQuery -->
+<script src="js/jquery.js"></script><!-- jQuery -->
+<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+<script src="js/owl.carousel.js"></script><!-- Exhibition -->	
+<script>$(function(){$('#owl-play').owlCarousel({singleItem: true});});</script>
+<style>	
+	p,h2,a,li,ul{font-family: '微软雅黑';}
+	.ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d{text-align: center;}
+</style>
+</head>
+<body>
+
+<div data-role="page" id="page_fist">
+	<div class="header">
+		<p style="text-align:center;font-size:17px;">欢迎来到AC社区</p>
+		<a class="menu_right" href="#dialog_aboutus" data-rel="popup" data-transition="flip"></a>
+		
+		<div data-role="popup" id="dialog_aboutus" data-theme="b">
+			<div data-role="content">
+				<ul data-role="listview" data-inset="true" data-theme="b">
+					<li style="text-align:center; background-color:rgb(22,160,133); color:white; font-weight:bold;">关于我们</li>
+				</ul>
+				<!--<a href="#" data-role="button">关于我们</a>-->
+				<!--<input type="text" placeholder="关于我们" style="text-align:center; background-color: rgb(22,160,133);" readonly="readonly"/>-->
+				<p>Ant Community（蚂蚁社区）是一个针对不同年龄段人群“定制”的智能管理系统，我们基于对社区现状的调研和分析，
+				提出了“社区，不只是一个住所”的口号。我们秉承着“便民”和“安全”的宗旨，致力于为社区居民构建一个全新的沟通服务平台。</p>
+				<p>我们始终坚信，社区虽小，但是举手间情无间。社区，绝不仅只是一个住所。</p>
+				<p> &nbsp;</p>
+				<p>指导老师：戴瑾、任凯</p>
+				<p>团队成员：杨曙宁、邵金金、袁振、</p>
+				<p style="text-indent:5em">孙一飞、徐方友</p>
+				<p> &nbsp;</p>
+			</div>
+
+			<div data-role="footer">
+				<!--<a href="#page_fist" data-icon="flat-cross"></a>-->
+				<a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="b" style="font-weight:bold; font-size:14px;">返回</a>
+			</div>
+		</div> 
+		
+	</div>
+
+	<div data-role="content">
+		<div id="owl-play" class="owl-carousel" align="center">
+			<a class="item"><img src="img/test.png" alt=""></a>
+			<a class="item"><img src="img/test.png" alt=""></a>
+			<a class="item"><img src="img/test.png" alt=""></a>
+			<a class="item"><img src="img/test.png" alt=""></a>
+			<a class="item"><img src="img/test.png" alt=""></a>
+		</div>
+		<!-- Dialog -->
+		<!--<center><a href="#download" data-role="button" data-theme="b" data-inline="true" data-transition="flip">社区，不只是一个住所</a></center>-->
+                <center><a href="login/index.html" data-ajax="false" data-role="button" data-theme="b" data-inline="true" data-transition="flip">社区，不只是一个住所</a></center>
+		<input type="text" placeholder="CopyRight @ 2016-2017 All rights reserved" style="text-align:center;" readonly="readonly"/>
+    </div> 
+</div>
+
+</body>
+</html>

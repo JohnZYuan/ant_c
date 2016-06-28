@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css"/>
+<link type="text/css" rel="stylesheet" href="css/mmenu.css"/>
+<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css"/>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+<style>
+	#map-canvas{
+		widdth: 100%;
+		height: 450px;
+		minheight: 350px;	
+	}
+</style>
+<script src="http://maps.google.cn/maps/api/js"></script>-->
+<script src="js/jquery.js"></script>
+<!--<script>
+	var center_peopleSquare=new google.maps.LatLng(31.229335,121.474573);
+	function initialize(){
+		var mapOptions ={
+			center:center_peopleSquare,
+			zoom:16,
+			mapTypeTd:google.maps.MapTypeId.ROADMAP,
+			zoomControl:true,
+			mapTypeControl:true,
+			scaleControl:true,
+			streetViewControl:true	
+		};
+		var map=new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
+	}
+	google.maps.event.addDomListener(window,'load',initialize);
+</script>-->
+
+<!--<script>
+	var center_peopleSquare=new google.maps.LatLng(31.229335,121.474573);
+	var center_shanghaiMuseume=new google.maps.LatLng(31.227844,121.475211);
+	var center_cityOfshanghai=new google.maps.LatLng(31.230331,121.473216);
+	function initialize(){
+		var mapOptions ={
+			center:center_peopleSquare,
+			zoom:16,
+			mapTypeTd:google.maps.MapTypeId.ROADMAP	
+		};
+		var map=new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
+		var marker1=new google.maps.Marker({
+			position:center_shanghaiMuseume	
+		});
+		var marker2=new google.maps.Marker({
+			position:center_cityOfshanghai
+		});
+		marker2.setMap(map);
+	}
+	google.maps.event.addDomListener(window,'load',initialize);
+</script>-->
+
+</head>
+<script>
+	$(document).ready(
+		function(){
+			$("a").click(
+				function(){
+					alert("你点了a标签");
+				}
+			);
+		}
+	);
+</script>
+<script>
+	/*$(document).ready(
+		function(){
+			$("body em").css("color", "red");
+			$("body > em").css("color", "red");
+			$("h1 > em").css("color", "red"); 
+			$("body:has(h1)").alert();;
+		}
+	);*/
+	$('div').click(function(){
+		$(this).slideUp();
+	});
+</script>
+<body>
+
+	<!-- <a href="#">特伦宁</a>
+	<h1>正确的认知是<em>非常</em>重要的</h1>
+	<em>去看看吧！</em> -->
+	<div id="a">A</div>
+	<div id="b">B</div>
+
+<!--<div data-role="page" data-theme="GoogleMap_test">
+	<div class="header">
+		<a href="#menu"></a>
+		<p style="text-align:center;">欢迎来到C部落</p>
+	</div>
+	
+	 <div data-role="content">
+		<div id="map-canvas"></div>   
+	</div>
+	
+	<div data-role="footer"  data-position="fixed" data-theme="b">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="again.html" data-icon="flat-video"  rel="external" style="border: none;">智慧民生</a></li>
+				<li><a href="google_test.html" class="ui-btn-active" data-icon="flat-bubble" data-transition="slide" rel="external" style="border: none;">公筹平台</a></li>
+				<li><a href="#" data-icon="flat-calendar"  style="border: none;">公投平台</a></li>
+				<li><a href="#" data-icon="flat-eye"  style="border: none;">交流平台</a></li>
+				<li><a href="#" data-icon="flat-man"  style="border: none;">个人中心</a></li>
+			</ul>
+		</div>
+	</div>
+</div> -->
+
+</body>
+</html>

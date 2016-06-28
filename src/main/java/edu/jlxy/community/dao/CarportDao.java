@@ -29,4 +29,6 @@ public interface CarportDao {
     *根据用户名选择多个用户
     */
     public List<CarportBean> select (int  id);
+    
+    public List <CarportBean> query ();
 }

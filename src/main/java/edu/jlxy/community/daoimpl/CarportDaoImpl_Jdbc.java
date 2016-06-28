@@ -7,7 +7,9 @@ package edu.jlxy.community.daoimpl;
 
 import edu.jlxy.community.dao.CarportDao;
 import edu.jlxy.community.model.CarportBean;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
@@ -39,6 +41,26 @@ public class CarportDaoImpl_Jdbc implements CarportDao{
     @Override
     public List<CarportBean> select(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<CarportBean> query() {
+        String stmt = "select * from carport";
+        List<Map<String ,Object>> result = jdbc.queryForList(stmt);
+        List<CarportBean> carports = new ArrayList<CarportBean>();
+        for (int i=0; i < result.size();i++){
+            Map<String ,Object> item = result.get(i);
+            CarportBean bean = new CarportBean();
+            bean.setId(Integer.parseInt(item.get("id")+""));
+            bean.setCommunity_id(Integer.parseInt(item.get("community_id")+""));
+            bean.setEnd_pos_x(Integer.parseInt(item.get("end_pos_x")+""));
+            bean.setEnd_pos_y(Integer.parseInt(item.get("end_pos_y")+""));
+            bean.setStart_pos_x(Integer.parseInt(item.get("start_pos_x")+""));
+            bean.setStart_pso_y(Integer.parseInt(item.get("start_pos_y")+""));
+            bean.setUnit_id(Integer.parseInt(item.get("unit_id")+""));
+            bean.setUser_id_card(item.get("user_id_card")+"");
+        }
+        return carports;
     }
     
     
