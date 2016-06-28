@@ -26,44 +26,44 @@ public class UserControllerTest extends IntegrateRestfulBase {
 
     @Test
     public void dbUserRegisterTest() {
-//        UserBean user = new UserBean("370103199408282013", "袁振", "wodemima", "15651073570", "smartyz94@gmail.com");
-//        Map map = new HashMap();
-//        map.put("json", user);
-//        TestReturn ret = doPost("/user_register", map);
-//        assertThat(ret.getStatus(), is("ok"));
-//        assertThat(ret.getMessage(), is("ok"));
-//        assertThat(ret.getBody(), not(nullValue()));
-//        result = ret.getObject(Map.class);
-//        String result_string = result.get("result") + "";
-//        assertThat(result_string, is("注册成功啦！"));
+       /* UserBean user = new UserBean("370103199408282013", "袁振", "wodemima", "15651073570", "smartyz94@gmail.com");
+        Map map = new HashMap();
+        map.put("json", user);
+       TestReturn ret = doPost("/user_register", map);
+        assertThat(ret.getStatus(), is("ok"));
+        assertThat(ret.getMessage(), is("ok"));
+        assertThat(ret.getBody(), not(nullValue()));
+       result = ret.getObject(Map.class);
+        String result_string = result.get("result") + "";
+        assertThat(result_string, is("注册成功啦！"));*/
     }
 
     @Test
     public void dbUserLoginTest() {
-//        UserBean user = new UserBean("370103199408282013", "1", "wodemima", "1", "1");
-//        Map map = new HashMap();
-//        map.put("json", user);
-//        TestReturn ret = doPost("/user_login", map);
-//        assertThat(ret.getStatus(), is("ok"));
-//        assertThat(ret.getMessage(), is("ok"));
-//        assertThat(ret.getBody(), not(nullValue()));
-//        result = ret.getObject(Map.class);
-//        String result_string = result.get("result") + "";
-//        assertThat(result_string, is("登陆成功！您好袁振！"));
+       UserBean user = new UserBean("370103199408282013", "1", "wodemima", "1", "1");
+        Map map = new HashMap(); 
+        map.put("json", user);
+       TestReturn ret = doPost("/user_login", map);
+        assertThat(ret.getStatus(), is("ok"));
+        assertThat(ret.getMessage(), is("ok"));
+        assertThat(ret.getBody(), not(nullValue()));
+        result = ret.getObject(Map.class);
+        String result_string = result.get("result") + "";
+        assertThat(result_string, is("登陆成功！您好袁振！"));
     }
 
     @Test
     public void dbUserDeleteTest() {
-//        String id_card = "370103199408282013";
-//        Map map = new HashMap();
-//        map.put("json", id_card);
-//        TestReturn ret = doPost("/user_delete", map);
-//        assertThat(ret.getStatus(), is("ok"));
-//        assertThat(ret.getMessage(), is("ok"));
-//        assertThat(ret.getBody(), not(nullValue()));
-//        result = ret.getObject(Map.class);
-//        String result_string = result.get("result") + "";
-//        assertThat(result_string, is("删除成功"));
+       /*String id_card = "370103199408282013";
+        Map map = new HashMap();
+        map.put("json", id_card);
+        TestReturn ret = doPost("/user_delete", map);
+        assertThat(ret.getStatus(), is("ok"));
+        assertThat(ret.getMessage(), is("ok"));
+        assertThat(ret.getBody(), not(nullValue()));
+        result = ret.getObject(Map.class);
+        String result_string = result.get("result") + "";
+        assertThat(result_string, is("删除成功"));*/
     }
 
 }
