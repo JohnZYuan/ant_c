@@ -77,4 +77,12 @@ public class AntController {
         result = antService.pageLoad(id_card);
         return result;  
     }
+    
+    
+    @RequestMapping("/carport_get")
+    public Object do_carport_get (@RequestParam("json")String json){
+        String id_card = new Gson().fromJson(json, String.class);
+        result = antService.getCarport(id_card);
+        return result;
+    }
 }

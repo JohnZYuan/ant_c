@@ -5,12 +5,15 @@
  */
 package edu.jlxy.community.service;
 
+import edu.jlxy.community.dao.CarportDao;
 import edu.jlxy.community.dao.FunctionDao;
 import edu.jlxy.community.dao.PageDao;
 import edu.jlxy.community.dao.UserDao;
+import edu.jlxy.community.model.CarportBean;
 import edu.jlxy.community.model.FunctionBean;
 import edu.jlxy.community.model.PageBean;
 import edu.jlxy.community.model.UserBean;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -35,6 +38,8 @@ public class AntService {
     private PageDao pagedao;
     @Autowired
     private FunctionDao functiondao;
+    @Autowired
+    private CarportDao carportdao;
     
     /*-------------------------------------------------------用户相关服务----------------------------------------------------------*/
     /*
@@ -203,4 +208,59 @@ public class AntService {
     }
     
 /*-------------------------------------------------------车位相关服务----------------------------------------------------------*/
+    /*
+    *查找车位
+    */
+    public Map<String,Object> getCarport (String user_card_id){
+        List<CarportBean> carports = carportdao.query() ;
+        CarportBean item = null;
+        for (CarportBean carport : carports ){
+            if (carport.getUser_id_card().equals(user_card_id)){
+                item = carport;
+            }
+        }
+        if (item==null)/*用户没有自己的车位--这里需要增强鲁棒性*/{
+            List<CarportBean > idleports = getIdleUnitCarports(getIdlestUnit());
+            map.put("carport", idleports.get(0));
+        }
+        else
+        {
+            List<CarportBean > idleports = getIdleUnitCarports(item.getUnit_id());
+            map.put("carport", idleports.get(0));
+        }
+        return map ;
+    }
+    
+    private List<CarportBean> getIdleUnitCarports (int unit_id){
+        List<CarportBean> result = new ArrayList<CarportBean>();
+        List<CarportBean> carports = carportdao.query();
+        for (CarportBean carport : carports){
+            if (carport.getUnit_id()== unit_id&&carport.getState()==0){
+                result.add(carport);
+            }
+        }
+        return carports;
+    }
+    
+    private int getIdlestUnit (){
+        List<CarportBean> carports = carportdao.query();
+        int [] bitmap = new int [20];//后期改为单元的数量
+        for (int i = 0;i<20;i++ ){
+            bitmap[i ]= 0;
+        }
+        for (CarportBean carport : carports){
+            if (carport.getState()==0){
+                bitmap[carport.getUnit_id()]++;
+            }
+        }
+        int result=0;
+        int max = 0 ;
+        for (int j = 0;j<=20;j++){
+            if (bitmap[j]>=max){
+                result = j;
+                max = bitmap[j];
+            }
+        }
+        return result;
+    }
 }

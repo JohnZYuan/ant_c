@@ -18,19 +18,19 @@ public class CarportBean {
     private String user_id_card ;
     private int unit_id ;
     private int community_id ;
+    private int state;
 
     public CarportBean() {
     }
 
-    public CarportBean(int start_pos_x, int start_pso_y, int end_pos_x, int end_pos_y, String user_id_card, int unit_id, int community_id) {
-        this.start_pos_x = start_pos_x;
-        this.start_pso_y = start_pso_y;
-        this.end_pos_x = end_pos_x;
-        this.end_pos_y = end_pos_y;
-        this.user_id_card = user_id_card;
-        this.unit_id = unit_id;
-        this.community_id = community_id;
+    public int getState() {
+        return state;
     }
+
+    public void setState(int state) {
+        this.state = state;
+    }
+
 
     public int getId() {
         return id;

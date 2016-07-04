@@ -14,7 +14,7 @@ import java.util.List;
  */
 public interface CarportDao {
     /*
-    *添加用户
+     *添加用户
      */
     public void insert (CarportBean carport);
     /*

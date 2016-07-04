@@ -7,7 +7,6 @@ package edu.jlxy.controller;
 
 import com.jhhc.baseframework.test.IntegrateRestfulBase;
 import com.jhhc.baseframework.test.TestReturn;
-import edu.jlxy.community.model.FunctionBean;
 import edu.jlxy.community.model.PageBean;
 import java.util.HashMap;
 import java.util.Map;
